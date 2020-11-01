@@ -4,11 +4,16 @@
     "keywords": ["travel", "ticket", "flight", "account travel"],
     "authors": [
         {
+            "name": "AccountTravel",
+            "email": "admin@account.travel"
+        },
+        {
             "name": "Aleksandr Dokin",
             "email": "alnidok@gmail.com",
             "homepage": "https://alnidok.ru"
         }
     ],
+    "license": "MIT",
     "minimum-stability": "stable",
     "require": {
         "php": ">=7.4",
