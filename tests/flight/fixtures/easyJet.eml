@@ -1,0 +1,979 @@
+Delivered-To: alastar13rus@gmail.com
+Received: by 2002:aed:3a25:0:0:0:0:0 with SMTP id n34csp6168838qte;
+        Mon, 8 Jul 2019 02:04:05 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqzklUEcySDzQB4cWxYRyLu8/W2nWmIzhqaAHqB+Y8Uv8TTyCgXsvejUxtZb3TUbBC1GKcef
+X-Received: by 2002:adf:f591:: with SMTP id f17mr18264039wro.119.1562576644922;
+        Mon, 08 Jul 2019 02:04:04 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1562576644; cv=none;
+        d=google.com; s=arc-20160816;
+        b=KyVv/MT2Xipfau+FGNZz2ABFhJrCxQoZFKNxpjNAx5Q8r/TzYupGWJHczo48z9Of6B
+         36d3Nj0A10HTw9mnIluL2ox0yAyetmMs1LxSmJfAUfp40bK0L+b+89+mNBQKNKY+No5f
+         92MNzwjOMBqTu7bVT+RHBQSL6Z3dCNgu4NPcewNhM0oX6zrhq2X5zfsJmGW6roS4rmMG
+         LN1QZM3strTFOeddGiXHQqqsUJotC78s21XPpQWSx8fkVVSHDEnyNk8ZRUW78fuyBtZ7
+         4fPxhgr7WBb9g0ei+JPNWB7UL8ina0jyxrJFT0Z/dT6mWZM/QG0kKYC1g4MDgrMCS4Kc
+         eo5g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:content-transfer-encoding:subject:date:to:from
+         :mime-version;
+        bh=+jwI7YwgtI4SKeqZBVeS8T+U+H187jEPJAUBRT3M4Z4=;
+        b=llDjgrgTG2lgIG6s2U/Onv3dL/D0MS8oBAHe3Qlh/Q8/0HQJcDZiZKRN1ctLIS5xsg
+         lMa7QqlWkxo+di2/hC05euMz0VOQKUr7H4lMVGKZLDpB63Dx8NV8vsv3fpdUuBG9Wf84
+         46w1HpKfkwuZEMcmLr4QhuDrGNCrDQCfFNQnD+wjqnbfKoqtZBuas7JHvvggJXn5slcs
+         73jtMaSFDnfjRqdM5E4KRmnNycNxo2q8tssUWmDKpvLFB1iJ9XBwMHvq6mVN4Q9qF1jA
+         38ok5pIUO1I603FjQ4pZ12NX3Qs13JYEGoL7+aIw6vi6JMVCtrmKqse0ZesIPZaA0K2Z
+         n7Vw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of donotreply@easyjet.com designates 165.193.147.216 as permitted sender) smtp.mailfrom=donotreply@easyjet.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=easyjet.com
+Return-Path: <donotreply@easyjet.com>
+Received: from origin2-mail.easyjet.com (origin2-mail.easyjet.com. [165.193.147.216])
+        by mx.google.com with ESMTP id d18si6577688wrw.132.2019.07.08.02.04.04
+        for <alastar13rus@gmail.com>;
+        Mon, 08 Jul 2019 02:04:04 -0700 (PDT)
+Received-SPF: pass (google.com: domain of donotreply@easyjet.com designates 165.193.147.216 as permitted sender) client-ip=165.193.147.216;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of donotreply@easyjet.com designates 165.193.147.216 as permitted sender) smtp.mailfrom=donotreply@easyjet.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=easyjet.com
+Received: from s217124dksw391 ([127.0.0.1]) by origin2-mail.easyjet.com with Microsoft SMTPSVC(7.5.7601.17514);
+	 Mon, 8 Jul 2019 10:04:05 +0100
+MIME-Version: 1.0
+From: "confirmation@easyJet.com" <donotreply@easyjet.com>
+To: alastar13rus@gmail.com
+Date: 8 Jul 2019 10:04:05 +0100
+Subject: easyJet booking reference: EXFVNVW
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+Return-Path: donotreply@easyjet.com
+Message-ID: <S217124DKSW391vSVMu00000ed7@origin2-mail.easyjet.com>
+X-OriginalArrivalTime: 08 Jul 2019 09:04:05.0789 (UTC) FILETIME=[184F54D0:01D5356C]
+
+=0D=0A=0D=0A=0D=0A<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Tr=
+ansitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitio=
+nal.dtd">=0D=0A<html>=0D=0A=0D=0A    <head>=0D=0A        <meta ht=
+tp-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8" =
+/>=0D=0A      =0D=0A        <title >=0D=0A            ANDREI, her=
+e are the details for booking (EXFVNVW)=0D=0A        </title>=0D=0A=
+        =0D=0A        <meta name=3D"viewport" content=3D"width=3D=
+device-width, initial-scale=3D1.0" />=0D=0A        =0A=0A=0A<!DOC=
+TYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http:/=
+/www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">=0A<html>=0A  =
+  <style>=0A        @import url('http://media.sc.easyjet.com/ejcm=
+s/cache/bundles/styles/legacy/fonts.css?v=3Djw-uf4iF4UUGSreLBJffK=
+zbk_DScDvflREnDPWnqNws1');=0A=0A        body {=0A            -moz=
+-text-size-adjust: 100%;=0A            -ms-text-size-adjust: 100%=
+;=0A            -webkit-text-size-adjust: 100%;=0A            tex=
+t-size-adjust: 100%;=0A        }=0A=0A        img{=0A            =
+border:0 none;=0A            height:auto;=0A            line-heig=
+ht:100%;=0A            outline:none;=0A            text-decoratio=
+n:none;=0A        }=0A=0A        a img{=0A            border:0 no=
+ne;=0A        }=0A=0A        table{=0A            mso-table-lspac=
+e:0;=0A            mso-table-rspace:0;=0A        }=0A=0A        t=
+able, td{=0A            border-collapse:collapse;=0A        }=0A=0A=
+        .email-wrapper{=0A            margin:0;=0A            pad=
+ding:0;=0A        }=0A=0A        [style*=3D"easyjet_rounded_demiR=
+g"] {=0A            font-family: 'easyjet_rounded_demiRg','Helvet=
+ica Neue Light',Helvetica,Arial, sans-serif !important=0A        =
+}=0A=0A        @media screen and (min-width: 670px) {=0A         =
+   .email-wrapper {=0A                width: 670px;=0A           =
+ }=0A=0A            .main-table {=0A                width: 670px;=
+=0A            }=0A        }=0A=0A        @media screen and (max-=
+width: 670px) {=0A            .email-wrapper {=0A                =
+width: 300px;=0A            }=0A=0A            .main-table {=0A  =
+              width: 300px;=0A            }=0A=0A            .can=
+cellation-message {=0A                width: 330px;=0A           =
+ }=0A        }=0A    </style>=0A</html>=0A=0D=0A        <!--[if m=
+so]><style>body, table tr, table td, a, span, table.MsoNormalTabl=
+e { font-family: 'Helvetica Neue Light', Helvetica, Arial, sans-s=
+erif !important; }</style><![endif]-->=0D=0A    </head>=0D=0A=0D=0A=
+    <body style=3D"padding: 0; margin: 0; font-family: 'Helvetica=
+ Neue Light', Helvetica, Arial, sans-serif, easyjet_rounded_demiR=
+g;">=0D=0A        <table class=3D"email-wrapper" align=3D"center"=
+ cellspacing=3D"0" cellpadding=3D"0">=0D=0A            <!--[if ms=
+o]><tr><td style=3D"width: 670px" width=3D"670" height=3D"10px"><=
+/td></tr><![endif]-->=0D=0A           =0D=0A            =0A=0A=0A=
+<tr>=0A    <td width=3D"668" height=3D"48" valign=3D"top" backgro=
+und=3D"http://www.easyjet.com/ejcms/cache/medialibrary/Images/Con=
+firmation%20email/easyjet-500-bg" bgcolor=3D"#ff6600" style=3D"ba=
+ckground-image: url('http://www.easyjet.com/ejcms/cache/medialibr=
+ary/Images/Confirmation%20email/easyjet-500-bg'); background-posi=
+tion: left">=0A        <!--[if gte mso 9]><v:rect xmlns:v=3D"urn:=
+schemas-microsoft-com:vml" fill=3D"true" stroke=3D"false" style=3D=
+"width:670px; height:50px"><v:fill type=3D"tile" src=3D"http://ww=
+w.easyjet.com/ejcms/cache/medialibrary/Images/Confirmation%20emai=
+l/easyjet-500-bg" color=3D"#ff6600" /><v:textbox style=3D"mso-fit=
+-shape-to-text:true" inset=3D"0,0,0,0"><![endif]-->=0A        <im=
+g src=3D"http://www.easyjet.com/ejcms/cache/medialibrary/Images/C=
+onfirmation%20email/easyjet-logo-responsive" width=3D"131" height=
+=3D"45" style=3D"display: block;" border=3D"0" />=0A        <!--[=
+if gte mso 9]></v:textbox></v:rect><![endif]-->=0A    </td>=0A</t=
+r>=0A=0A<tr>=0A    <td bgcolor=3D"#363636" align=3D"left" style=3D=
+"padding-top: 10px; padding-right: 20px; padding-bottom: 10px; pa=
+dding-left: 20px; color: #ffffff; margin: 0; font-size: 14px; fon=
+t-weight: normal; font-family: 'Helvetica Neue Light',Helvetica,A=
+rial,sans-serif;">=0A        ANDREI, here are the details for boo=
+king EXFVNVW=0A    </td>=0A</tr>=0D=0A=0D=0A=0D=0A=0D=0A=0D=0A<tr=
+>=0D=0A    <td bgcolor=3D"#e3e3e3" style=3D"padding-top: 10px; pa=
+dding-right: 20px; padding-bottom: 10px; padding-left: 20px;">=0D=0A=
+        <table align=3D"left" cellspacing=3D"0" cellpadding=3D"0"=
+>=0D=0A            <tr>=0D=0A                <td width=3D"300" bg=
+color=3D"#e3e3e3" style=3D"padding-bottom: 10px; color: #000000; =
+font-size: 16px; font-family: 'Helvetica Neue Light', Helvetica, =
+Arial, sans-serif;">=0D=0A                    <strong >Next steps=
+</strong>=0D=0A                </td>=0D=0A            </tr>=0D=0A=
+            <tr>=0D=0A                <td width=3D"300" bgcolor=3D=
+"#e3e3e3">=0D=0A                    <table cellspacing=3D"0" cell=
+padding=3D"0">=0D=0A                                    <tr>=0D=0A=
+                                        <td valign=3D"top" width=3D=
+"10">=0D=0A                                            &bull;=0D=0A=
+                                        </td>=0D=0A              =
+                          <td valign=3D"top" width=3D"290" style=3D=
+"font-size: 13px;">=0D=0A                                        =
+    <span >Check in online</span>=0D=0A                          =
+                      <br />=0D=0A                               =
+                 <span > (Check in opens 30 days before your flig=
+ht)</span>=0D=0A                                        </td>=0D=0A=
+                                    </tr>=0D=0A                  =
+                  <tr>=0D=0A                                     =
+   <td valign=3D"top" width=3D"10">=0D=0A                        =
+                    &bull;=0D=0A                                 =
+       </td>=0D=0A                                        <td val=
+ign=3D"top" width=3D"290" style=3D"font-size: 13px;" >=0D=0A     =
+                                       Get your boarding passes=0D=0A=
+                                        </td>=0D=0A              =
+                      </tr>=0D=0A=0D=0A                    </tabl=
+e>=0D=0A                </td>=0D=0A=0D=0A            </tr>=0D=0A =
+       </table>=0D=0A            <table align=3D"right" cellspaci=
+ng=3D"0" cellpadding=3D"0">=0D=0A                <tr>=0D=0A      =
+                  <td width=3D"300" align=3D"right" style=3D"font=
+-size: 13px; font-weight: 500; font-family: 'Helvetica Neue Light=
+', Helvetica, Arial, sans-serif;">=0D=0A                         =
+   <a style=3D"text-decoration:none;" href=3D"https://www.easyjet=
+.com/managebookings/en-GB/Manage/EXFVNVW">=0D=0A                 =
+               <span style=3D"color:#FA6900;text-decoration:none;=
+" >Manage booking &gt;</span>=0D=0A                            </=
+a>=0D=0A                        </td>=0D=0A                </tr>=0D=0A=
+            </table>=0D=0A        =0D=0A    </td>=0D=0A</tr>=0A=0A=
+        =0A<tr>=0A    <td bgcolor=3D"#ffffff" style=3D"padding-to=
+p: 10px; padding-right: 20px; padding-bottom: 10px; padding-left:=
+ 20px; border-top: 3px solid #363636; border-bottom: 3px solid #3=
+63636;">=0A        <table align=3D"left" cellspacing=3D"0" cellpa=
+dding=3D"0">=0A            <tr>=0A                <td width=3D"30=
+0" style=3D"padding-bottom:10px; color: #000000; font-size: 16px;=
+ font-family: 'Helvetica Neue Light', Helvetica, Arial, sans-seri=
+f;">=0A                    <strong >Payment details</strong>=0A  =
+              </td>=0A            </tr>=0A                <tr>=0A=
+                    <td width=3D"300" style=3D"font-size: 13px;">=
+=0A                        Payment of =E2=82=AC33.79 by Debit Mas=
+tercard on 08/07/2019=0A                    </td>=0A             =
+   </tr>=0A        </table>=0A        <table align=3D"right" cell=
+spacing=3D"0" cellpadding=3D"0">=0A            <tr>=0A           =
+     <td width=3D"300" align=3D"right" style=3D"margin: 0; font-s=
+ize: 13px; font-weight: 500; font-family: 'Helvetica Neue Light',=
+ Helvetica, Arial, sans-serif;">=0A                        <a sty=
+le=3D"text-decoration:none;" href=3D"http://www.easyjet.com/en/Bo=
+oking/Receipt?ref=3DEXFVNVW&amp;k=3DDXsvdecXlTxSC0i1UlFZO5TYPHSVz=
+AmDKubX4Fh3M%2FY%3D">=0A                            <span style=3D=
+"color:#FA6900;text-decoration:none;" >Email me my full payment c=
+onfirmation &gt;</span>                        =0A               =
+         </a>=0A                </td>=0A            </tr>=0A     =
+           <tr>=0A                    <td width=3D"300" align=3D"=
+right" style=3D"margin: 0; padding-top:5px; font-size: 13px; font=
+-weight: 500; font-family: 'Helvetica Neue Light', Helvetica, Ari=
+al, sans-serif;">=0A                        <a style=3D"text-deco=
+ration:none;" href=3D"https://www.easyjet.com/en/Booking/VatRecei=
+pt?ref=3DEXFVNVW&amp;k=3DDXsvdecXlTxSC0i1UlFZO5TYPHSVzAmDKubX4Fh3=
+M%2FY%3D">=0A                            <span style=3D"color:#FA=
+6900;text-decoration:none;" >Email me a VAT invoice &gt;</span>=0A=
+                        </a>=0A                    </td>=0A      =
+          </tr>=0A        </table>=0A    </td>=0A</tr>           =
+ <tr align=3D"center">=0D=0A                <td bgcolor=3D"#fffff=
+f" width=3D"670">=0D=0A                    <table cellpadding=3D"=
+0" cellspacing=3D"0" class=3D"main-table" align=3D"center">=0D=0A=
+                        <!--[if mso]><tr><td style=3D"width: 670p=
+x" width=3D"670" height=3D"10px"></td></tr><![endif]-->=0D=0A    =
+                    <tr>=0D=0A                            <td sty=
+le=3D"padding-left: 10px; padding-top: 10px;">=0D=0A             =
+                   <!--[if mso]><table valign=3D"top" cellspacing=
+=3D"0" cellpadding=3D"0"><tr><td valign=3D"top" align=3D"left"><!=
+[endif]-->=0D=0A                                <table id=3D"left=
+col" valign=3D"top" align=3D"left" cellspacing=3D"0" cellpadding=3D=
+"0">=0D=0A                                    <tr>=0D=0A         =
+                               <td id=3D"ej-itinerary" width=3D"3=
+00" align=3D"left" style=3D"padding-left: 10px; padding-right: 20=
+px">=0D=0A                                            =0D=0A=0D=0A=
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0">=0D=0A=
+            <tr>=0D=0A                <td style=3D"padding-top: 0=
+; color: #000000; font-size: 16px; font-family: 'Helvetica Neue L=
+ight',Helvetica,Arial,sans-serif,easyjet_rounded_demiRg;" bgcolor=
+=3D"#ffffff">=0D=0A                    <strong >Passenger & Fligh=
+t details 1 of 1</strong>=0D=0A                </td>=0D=0A       =
+     </tr>=0D=0A            <tr>=0D=0A                <td style=3D=
+"padding-top: 10px; padding-bottom: 10px;">=0D=0A                =
+    <table class=3D"ej-flight" cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0" width=3D"300" style=3D"padding: 5px; width: 300px;=
+ color: #ffffff; font-size: 12px;" bgcolor=3D"#363636">=0D=0A    =
+                    <tr>=0D=0A                            <td sty=
+le=3D"padding-top: 5px; padding-bottom: 5px; padding-left: 5px; p=
+adding-right: 5px; color: #ffffff; font-size: 16px; font-family: =
+'Helvetica Neue Light',Helvetica,Arial,sans-serif,easyjet_rounded=
+_demiRg;">=0D=0A                                Milan Malpensa (T=
+erminal 2) to Prague (Terminal 2)=0D=0A                          =
+     =0D=0A                            </td>=0D=0A               =
+         </tr>=0D=0A                        <tr>=0D=0A           =
+                 <td style=3D"padding-top: 2px; padding-bottom: 2=
+px; padding-left: 5px; padding-right: 5px; color: #ffffff;">=0D=0A=
+                                <table align=3D"left" cellpadding=
+=3D"0" cellspacing=3D"0" border=3D"0" style=3D"width:100%">=0D=0A=
+                                    <tr>=0D=0A                   =
+                     <td style=3D"width: 50px; font-size: 12px; c=
+olor: #ffffff;" >EJU2585      </td>=0D=0A                        =
+                <td style=3D"width: 24px; padding-left: 5px; padd=
+ing-right: 3px;">=0D=0A                                          =
+  <img src=3D"http://www.easyjet.com/ejcms/cache/medialibrary/Ima=
+ges/Confirmation%20email/flightdetailsplane-v1" alt=3D"flight" he=
+ight=3D"20" width=3D"19" style=3D"display:block" border=3D"0" />=0D=0A=
+                                        </td>=0D=0A              =
+                          <td>=0D=0A                             =
+               <hr width=3D"100%" style=3D"width: 100%" />=0D=0A =
+                                       </td>=0D=0A               =
+                     </tr>=0D=0A                                <=
+/table>=0D=0A=0D=0A                            </td>=0D=0A       =
+                 </tr>=0D=0A                        <tr>=0D=0A   =
+                         <td style=3D"padding-left: 5px;">=0D=0A =
+                               <table cellpadding=3D"0" cellspaci=
+ng=3D"0">=0D=0A                                    <tr>=0D=0A    =
+                                    <td style=3D"color:#ffffff;pa=
+dding-top:4px;padding-right:10px;font-size: 12px;width:170px;" >D=
+eparts:</td>=0D=0A                                        <td sty=
+le=3D"color:#ffffff;padding-left:0;padding-top:4px;padding-right:=
+5px;font-size: 12px;">Mon 09 Sep 19:40</td>=0D=0A                =
+                    </tr>=0D=0A                                  =
+  <tr>=0D=0A                                        <td style=3D"=
+color:#ffffff;padding-top:4px;padding-right:10px;font-size: 12px;=
+width:170px;" >Arrives:</td>=0D=0A                               =
+         <td style=3D"color:#ffffff;padding-left:0;padding-top:4p=
+x;padding-right:5px;font-size: 12px;">Mon 09 Sep 21:10</td>=0D=0A=
+                                    </tr>=0D=0A                  =
+                      <tr>=0D=0A                                 =
+           <td style=3D"color: #ffffff; padding-top: 4px; padding=
+-right: 10px; font-size: 12px; width: 170px;" >Bag drop opens:</t=
+d>=0D=0A                                            <td style=3D"=
+color: #ffffff; padding-left: 0; padding-top: 4px; padding-right:=
+ 5px; font-size: 12px;">Mon 09 Sep 17:40</td>=0D=0A              =
+                          </tr>=0D=0A                            =
+            <tr>=0D=0A                                           =
+ <td style=3D"color: #ffffff; padding-top: 4px; padding-right: 10=
+px; font-size: 12px; width: 170px;" >Bag drop closes:</td>=0D=0A =
+                                           <td style=3D"color: #f=
+fffff; padding-left: 0; padding-top: 4px; padding-right: 5px; fon=
+t-size: 12px;">Mon 09 Sep 19:00</td>=0D=0A                       =
+                 </tr>=0D=0A                                </tab=
+le>=0D=0A                            </td>=0D=0A                 =
+       </tr>=0D=0A                             <tr>=0D=0A        =
+                         <td style=3D"padding-top: 8px; padding-b=
+ottom: 5px; padding-left: 5px; padding-right: 5px; color: #ffffff=
+;" >=0D=0A                                     Check in closes 40=
+ mins before departure=0D=0A                                 </td=
+>=0D=0A                             </tr>=0D=0A                  =
+  </table>=0D=0A           =0D=0A                <table class=3D"=
+ej-pax" cellpadding=3D"0" cellspacing=3D"5" width=3D"300" style=3D=
+"padding: 5px; width: 300px; table-layout: fixed; color: #363636;=
+ font-size: 13px; font-family: 'Helvetica Neue Light', Helvetica,=
+ Arial, sans-serif, easyjet_rounded_demiRg;" bgcolor=3D"#f1f1f1">=
+=0D=0A=0D=0A                        <tr>                         =
+      =0D=0A                        <td valign=3D"top" style=3D"p=
+adding: 5px; border-bottom: 1px solid #b6b6b6; width: 190px; word=
+-wrap: break-word;">=0D=0A                        <!--[if !mso]><=
+!-- -->=0D=0A                            Mr ANDREI DOKIN=0D=0A   =
+                         <!-- <![endif]-->=0D=0A=0D=0A           =
+                 <!--[if mso]>=0D=0A                             =
+   Mr ANDREI DOKIN=0D=0A                            <![endif]-->=0D=0A=
+                            </td>=0D=0A                          =
+                  <td valign=3D"top" style=3D"border-bottom: 1px =
+solid #b6b6b6; width: 80px; padding: 5px;" align=3D"right">=0D=0A=
+                                                <span >Seat</span=
+>=0D=0A                                                <span >aut=
+o allocated</span>   =0D=0A                                      =
+      </td>=0D=0A    =0D=0A                                </tr> =
+=0D=0A=0D=0A                </table>=0D=0A                       =
+ <table class=3D"ej-flightactions" width=3D"300" cellpadding=3D"0=
+" cellspacing=3D"0">=0D=0A                       =0D=0A          =
+                          <tr>=0D=0A                             =
+           <td style=3D"padding-left: 10px; padding-top: 10px;">=0D=0A=
+                                            =0D=0A=0D=0A=0D=0A=0D=0A=
+<div>    =0D=0A    <!--[if mso]>=0D=0A        <v:roundrect xmlns:=
+v=3D"urn:schemas-microsoft-com:vml" href=3D"https://www.easyjet.c=
+om/EN/SeatChange/ChangeSeats?bookingReference=3DEXFVNVW&returnUrl=
+=3D%2fEN%2fMyEasyjet%2fViewBooking%2fEXFVNVW" style=3D"width:280p=
+x;v-text-anchor:middle;" arcsize=3D"6%" strokecolor=3D"#f46921" f=
+illcolor=3D"#f46921">=0D=0A            <v:textbox style=3D"mso-fi=
+t-shape-to-text:t">=0D=0A                <center style=3D"color:#=
+ffffff;font-family:sans-serif;font-size:13px;font-weight:bold;">A=
+dd Seats</center>=0D=0A            </v:textbox>=0D=0A        </v:=
+roundrect>    =0D=0A    <![endif]-->=0D=0A    <!--[if !mso]><!-- =
+-->=0D=0A    <a href=3D"https://www.easyjet.com/EN/SeatChange/Cha=
+ngeSeats?bookingReference=3DEXFVNVW&returnUrl=3D%2fEN%2fMyEasyjet=
+%2fViewBooking%2fEXFVNVW" style=3D"background-color:#f46921;borde=
+r:1px solid #f46921; -ms-border-radius:2px; border-radius:2px;col=
+or:#ffffff;display:inline-block;font-family:sans-serif;font-size:=
+13px;font-weight:bold;line-height:19px;padding:8px 5px;text-align=
+:center;text-decoration:none;width:270px;-webkit-text-size-adjust=
+:none;mso-hide:all;">Add Seats</a>    =0D=0A    <!-- <![endif]-->=
+=0D=0A</div>=0D=0A                                        </td>=0D=0A=
+                                    </tr>=0D=0A                  =
+                  <tr>=0D=0A                                     =
+   <td style=3D"padding-left: 10px; padding-top: 5px;">=0D=0A    =
+                                        =0D=0A=0D=0A=0D=0A=0D=0A<=
+div>    =0D=0A    <!--[if mso]>=0D=0A        <v:roundrect xmlns:v=
+=3D"urn:schemas-microsoft-com:vml" href=3D"https://www.easyjet.co=
+m/EN/secure/UpsellHoldItems.mvc/ModifyHoldItems?bookingReference=3D=
+EXFVNVW" style=3D"width:280px;v-text-anchor:middle;" arcsize=3D"6=
+%" strokecolor=3D"#f46921" fillcolor=3D"#f46921">=0D=0A          =
+  <v:textbox style=3D"mso-fit-shape-to-text:t">=0D=0A            =
+    <center style=3D"color:#ffffff;font-family:sans-serif;font-si=
+ze:13px;font-weight:bold;">Add Hold items</center>=0D=0A         =
+   </v:textbox>=0D=0A        </v:roundrect>    =0D=0A    <![endif=
+]-->=0D=0A    <!--[if !mso]><!-- -->=0D=0A    <a href=3D"https://=
+www.easyjet.com/EN/secure/UpsellHoldItems.mvc/ModifyHoldItems?boo=
+kingReference=3DEXFVNVW" style=3D"background-color:#f46921;border=
+:1px solid #f46921; -ms-border-radius:2px; border-radius:2px;colo=
+r:#ffffff;display:inline-block;font-family:sans-serif;font-size:1=
+3px;font-weight:bold;line-height:19px;padding:8px 5px;text-align:=
+center;text-decoration:none;width:270px;-webkit-text-size-adjust:=
+none;mso-hide:all;">Add Hold items</a>    =0D=0A    <!-- <![endif=
+]-->=0D=0A</div>=0D=0A                                        </t=
+d>=0D=0A                                    </tr>=0D=0A          =
+                          <tr>=0D=0A                             =
+           <td style=3D"padding-left: 10px; padding-top: 5px;">=0D=0A=
+                                            =0D=0A=0D=0A=0D=0A=0D=0A=
+<div>    =0D=0A    <!--[if mso]>=0D=0A        <v:roundrect xmlns:=
+v=3D"urn:schemas-microsoft-com:vml" href=3D"https://www.easyjet.c=
+om/EN/secure/MyEasyJet.mvc/ViewBooking?bookingReference=3DEXFVNVW=
+" style=3D"width:280px;v-text-anchor:middle;" arcsize=3D"6%" stro=
+kecolor=3D"#e6e6e6" fillcolor=3D"#ffffff">=0D=0A            <v:te=
+xtbox style=3D"mso-fit-shape-to-text:t">=0D=0A                <ce=
+nter style=3D"color:#f46921;font-family:sans-serif;font-size:13px=
+;font-weight:bold;">Change Flight</center>=0D=0A            </v:t=
+extbox>=0D=0A        </v:roundrect>    =0D=0A    <![endif]-->=0D=0A=
+    <!--[if !mso]><!-- -->=0D=0A    <a href=3D"https://www.easyje=
+t.com/EN/secure/MyEasyJet.mvc/ViewBooking?bookingReference=3DEXFV=
+NVW" style=3D"background-color:#ffffff;border:1px solid #e6e6e6; =
+-ms-border-radius:2px; border-radius:2px;color:#f46921;display:in=
+line-block;font-family:sans-serif;font-size:13px;font-weight:bold=
+;line-height:19px;padding:8px 5px;text-align:center;text-decorati=
+on:none;width:270px;-webkit-text-size-adjust:none;mso-hide:all;">=
+Change Flight</a>    =0D=0A    <!-- <![endif]-->=0D=0A</div>=0D=0A=
+                                        </td>=0D=0A              =
+                      </tr>=0D=0A                        </table>=
+=0D=0A                </td>=0D=0A            </tr>=0D=0A        <=
+/table>=0D=0A=0D=0A                                        </td>=0D=0A=
+                                    </tr>=0D=0A                  =
+                  =0D=0A                                    <tr>=0D=0A=
+                                            <td class=3D"ej-bags"=
+ width=3D"300" align=3D"left" style=3D"padding-top: 10px; padding=
+-left: 10px; padding-right: 20px;">=0D=0A                        =
+                        <table border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"5" width=3D"300" style=3D"padding: 5px; width: 300px;=
+ color: #363636; font-size: 13px; font-family: 'Helvetica Neue Li=
+ght', Helvetica, Arial, sans-serif;">=0D=0A                      =
+                              <tr>=0D=0A                         =
+                               <td style=3D"padding-top: 5px; pad=
+ding-bottom: 5px; color: #000000; font-size: 16px; font-family: '=
+Helvetica Neue Light', Helvetica, Arial, sans-serif, easyjet_roun=
+ded_demiRg;">=0D=0A                                              =
+              <strong>Baggage</strong>=0D=0A                     =
+                                   </td>=0D=0A                   =
+                                     <td>=0D=0A                  =
+                                          &nbsp;=0D=0A           =
+                                             </td>=0D=0A         =
+                                           </tr>=0D=0A           =
+                                         <tr>=0D=0A              =
+                                          <td valign=3D"top" alig=
+n=3D"left" width=3D"140" style=3D"padding-top: 5px; padding-botto=
+m: 5px">=0D=0A                                                   =
+     =0D=0A                                                      =
+      <table border=3D"0" cellpadding=3D"0">=0D=0A               =
+                                                 <tr>=0D=0A      =
+                                                              <td=
+>=0D=0A                                                          =
+              <img src=3D"http://www.easyjet.com/ejcms/cache/medi=
+alibrary/Images/Confirmation%20email/cabin_bag_new_28_blk.png" />=
+=0D=0A                                                           =
+         </td>=0D=0A                                             =
+                       <td style=3D"color: #363636; font-size: 13=
+px; font-family: 'Helvetica Neue Light', Helvetica, Arial, sans-s=
+erif;">=0D=0ACabin baggage only                                  =
+                                  </td>=0D=0A                    =
+                                            </tr>=0D=0A          =
+                                                  </table>=0D=0A =
+                                                       =0D=0A    =
+                                                    =0D=0A       =
+                                                 </td>=0D=0A=0D=0A=
+                                                        <td valig=
+n=3D"top" align=3D"right" width=3D"140" style=3D"padding: 5px;">=0D=0A=
+                                                            Max s=
+ize 56 x 45 x 25cm=0D=0A                                         =
+               </td>=0D=0A                                       =
+            =0D=0A                                               =
+     </tr>=0D=0A                                                 =
+   <tr>=0D=0A                                                    =
+    <td colspan=3D"2">=0D=0A                                     =
+                       <p>There=E2=80=99s only room for up to 70 =
+cabin bags in the overhead lockers and they fill up quickly. All =
+remaining cabin bags will be put into the hold.</p>=0D=0A        =
+                                                </td>=0D=0A      =
+                                             =0D=0A              =
+                                      </tr>=0D=0A=0D=0A          =
+                                      </table>=0D=0A             =
+                               </td>=0D=0A                       =
+                 </tr>=0D=0A                                     =
+       <tr>=0D=0A                                                =
+<td id=3D"ej-ssr" width=3D"300" align=3D"left" style=3D"padding-t=
+op: 10px; padding-left: 10px; padding-right: 20px">=0D=0A        =
+                                            =0D=0A=0D=0A=0D=0A=0D=0A=
+=0D=0A    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"5"=
+ width=3D"300" style=3D"padding: 5px; width: 300px; color: #36363=
+6; font-size: 13px; font-family: 'Helvetica Neue Light', Helvetic=
+a, Arial, sans-serif;">=0D=0A        <tr>=0D=0A            <td st=
+yle=3D"padding-top: 5px; padding-bottom: 5px; color: #000000; fon=
+t-size: 16px; font-family: 'Helvetica Neue Light', Helvetica, Ari=
+al, sans-serif, easyjet_rounded_demiRg;">=0D=0A                <s=
+trong >Special assistance and nut allergy notification</strong>=0D=0A=
+            </td>=0D=0A        </tr>=0D=0A            <tr>=0D=0A =
+               <td >Please let us know, no later than 48hrs befor=
+e the scheduled flight departure whether you need assistance in t=
+he airport,and aircraft or suffer from a nut allergy so that we c=
+an inform our crew prior to your airport arrival.</td>=0D=0A     =
+       </tr>=0D=0A            <tr>=0D=0A                <td >Pass=
+engers requiring assistance getting through the airport should ar=
+rive at least 90 minutes before flight departure.</td>=0D=0A     =
+       </tr>=0D=0A    </table>=0D=0A        <table align=3D"left"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"300" style=3D"width=
+: 300px">=0D=0A            <tr>=0D=0A                <td style=3D=
+"padding-left: 10px; padding-top: 10px;">=0D=0A                  =
+  =0D=0A=0D=0A=0D=0A=0D=0A<div>    =0D=0A    <!--[if mso]>=0D=0A =
+       <v:roundrect xmlns:v=3D"urn:schemas-microsoft-com:vml" hre=
+f=3D"https://www.easyjet.com/en/MyEasyJet/ViewBookingSSR/EXFVNVW"=
+ style=3D"width:280px;v-text-anchor:middle;" arcsize=3D"6%" strok=
+ecolor=3D"#f46921" fillcolor=3D"#f46921">=0D=0A            <v:tex=
+tbox style=3D"mso-fit-shape-to-text:t">=0D=0A                <cen=
+ter style=3D"color:#ffffff;font-family:sans-serif;font-size:13px;=
+font-weight:bold;">Add Special Service Request</center>=0D=0A    =
+        </v:textbox>=0D=0A        </v:roundrect>    =0D=0A    <![=
+endif]-->=0D=0A    <!--[if !mso]><!-- -->=0D=0A    <a href=3D"htt=
+ps://www.easyjet.com/en/MyEasyJet/ViewBookingSSR/EXFVNVW" style=3D=
+"background-color:#f46921;border:1px solid #f46921; -ms-border-ra=
+dius:2px; border-radius:2px;color:#ffffff;display:inline-block;fo=
+nt-family:sans-serif;font-size:13px;font-weight:bold;line-height:=
+19px;padding:8px 5px;text-align:center;text-decoration:none;width=
+:270px;-webkit-text-size-adjust:none;mso-hide:all;">Add Special S=
+ervice Request</a>    =0D=0A    <!-- <![endif]-->=0D=0A</div>=0D=0A=
+                </td>=0D=0A            </tr>=0D=0A            <tr=
+>=0D=0A                <td style=3D"padding-left: 10px; padding-t=
+op: 10px;">=0D=0A                    =0D=0A=0D=0A=0D=0A=0D=0A<div=
+>    =0D=0A    <!--[if mso]>=0D=0A        <v:roundrect xmlns:v=3D=
+"urn:schemas-microsoft-com:vml" href=3D"https://www.easyjet.com/e=
+n/MyEasyJet/ViewBookingSSR/EXFVNVW" style=3D"width:280px;v-text-a=
+nchor:middle;" arcsize=3D"6%" strokecolor=3D"#f46921" fillcolor=3D=
+"#f46921">=0D=0A            <v:textbox style=3D"mso-fit-shape-to-=
+text:t">=0D=0A                <center style=3D"color:#ffffff;font=
+-family:sans-serif;font-size:13px;font-weight:bold;">Add a nut al=
+lergy notification</center>=0D=0A            </v:textbox>=0D=0A  =
+      </v:roundrect>    =0D=0A    <![endif]-->=0D=0A    <!--[if !=
+mso]><!-- -->=0D=0A    <a href=3D"https://www.easyjet.com/en/MyEa=
+syJet/ViewBookingSSR/EXFVNVW" style=3D"background-color:#f46921;b=
+order:1px solid #f46921; -ms-border-radius:2px; border-radius:2px=
+;color:#ffffff;display:inline-block;font-family:sans-serif;font-s=
+ize:13px;font-weight:bold;line-height:19px;padding:8px 5px;text-a=
+lign:center;text-decoration:none;width:270px;-webkit-text-size-ad=
+just:none;mso-hide:all;">Add a nut allergy notification</a>    =0D=0A=
+    <!-- <![endif]-->=0D=0A</div>=0D=0A                </td>=0D=0A=
+            </tr>=0D=0A        </table>=0D=0A=0D=0A              =
+                                  </td>=0D=0A                    =
+                        </tr>=0D=0A                              =
+          =0D=0A                                </table><!--[if m=
+so]></td><td valign=3D"top" align=3D"left"><![endif]-->=0D=0A    =
+                            <table id=3D"rightcol" valign=3D"top"=
+ align=3D"left" cellspacing=3D"0" cellpadding=3D"0">=0D=0A       =
+                             <!--[if mso]><tr><td style=3D"width:=
+ 670px" width=3D"670" height=3D"10px"></td></tr><![endif]-->=0D=0A=
+                                        =0D=0A                   =
+                     <tr><td style=3D"height: 10px;"></td></tr>=0D=0A=
+                                        =0D=0A                   =
+            =0D=0A=0D=0A                                    <tr>=0D=0A=
+                                        <td id=3D"ej-airportMessa=
+ging" width=3D"300" align=3D"left" style=3D"padding-top: 10px; pa=
+dding-left: 10px">=0D=0A                                         =
+   =0D=0A=0D=0A=0D=0A=0D=0A        <table border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" width=3D"300" style=3D"width: 300px;">=0D=0A=
+            <tr>=0D=0A                <td style=3D"width: 300px; =
+padding-top: 10px">=0D=0A                    <table border=3D"0" =
+cellpadding=3D"5" cellspacing=3D"0" style=3D"width: 300px; min-he=
+ight: 40px; background-color: #f2f2f2; border-bottom: 2pt solid #=
+cccccc; padding: 5px;">=0D=0A                        <tr>=0D=0A  =
+                          <td colspan=3D"2" style=3D"padding-left=
+: 5px; padding-right: 5px; color: black; font-family: 'Helvetica =
+Neue Light', Helvetica, Arial, sans-serif, easyjet_rounded_demiRg=
+;">=0D=0A                                <strong><a href=3D"https=
+://www.easyjet.com/EN/secure/MyEasyJet.mvc/ViewBooking?bookingRef=
+erence=3DEXFVNVW" style=3D"font-size: 16px; color: black; text-de=
+coration: none;" >Manage your booking...</a></strong>=0D=0A      =
+                      </td>=0D=0A                        </tr>=0D=0A=
+                        <tr>=0D=0A                            <td=
+ style=3D"padding-left: 5px; padding-right: 5px; vertical-align: =
+top; font-family: 'Helvetica Neue Light', Helvetica, Arial, sans-=
+serif, easyjet_rounded_demiRg;">=0D=0A                           =
+     <a href=3D"https://www.easyjet.com/EN/secure/MyEasyJet.mvc/V=
+iewBooking?bookingReference=3DEXFVNVW" style=3D"font-size: 12px; =
+color: black; text-decoration: none;" >Head to <span style=3D"col=
+or:#f60;">manage bookings</span> and you can do everything from a=
+dding and changing seats & hold luggage to changing passenger det=
+ails and flights...</a>=0D=0A                            </td>=0D=0A=
+                            <td style=3D"height: 53px; width: 58p=
+x;">=0D=0A                                <a href=3D"https://www.=
+easyjet.com/EN/secure/MyEasyJet.mvc/ViewBooking?bookingReference=3D=
+EXFVNVW">=0D=0A                                    <img src=3D"ht=
+tp://www.easyjet.com/ejcms/cache/medialibrary/Images/confirmation=
+%20email/ManageBooking" align=3D"left" align=3D"right" border=3D"=
+0" style=3D"display: block; border: 0px;" height=3D"53" width=3D"=
+53" alt=3D""/>=0D=0A                                </a>=0D=0A   =
+                         </td>=0D=0A                        </tr>=
+=0D=0A                    </table>=0D=0A                </td>=0D=0A=
+            </tr>=0D=0A            <tr>=0D=0A                <td =
+style=3D"width: 300px; padding-top: 10px">=0D=0A                 =
+   <table border=3D"0" cellpadding=3D"5" cellspacing=3D"0" style=3D=
+"width: 300px; min-height: 40px; background-color: #f2f2f2; borde=
+r-bottom: 2pt solid #cccccc; padding: 5px;">=0D=0A               =
+         <tr>=0D=0A                            <td colspan=3D"2" =
+style=3D"padding-left: 5px; padding-right: 5px; color: black; fon=
+t-family: 'Helvetica Neue Light', Helvetica, Arial, sans-serif, e=
+asyjet_rounded_demiRg;">=0D=0A                                <st=
+rong><a href=3D"http://www.easyjet.com/en/mobile" style=3D"font-s=
+ize: 16px; color: black; text-decoration: none;" >easyJet App</a>=
+</strong>=0D=0A                            </td>=0D=0A           =
+             </tr>=0D=0A                        <tr>=0D=0A       =
+                     <td style=3D"padding-left: 5px; padding-righ=
+t: 5px; vertical-align: top; font-family: 'Helvetica Neue Light',=
+ Helvetica, Arial, sans-serif, easyjet_rounded_demiRg;">=0D=0A   =
+                             <a href=3D"http://www.easyjet.com/en=
+/mobile" style=3D"font-size: 12px; color: black; text-decoration:=
+ none;" >Download our new app for <span style=3D"color:#f60;">iPh=
+ones</span> and <span style=3D"color:#f60;">Android</span> mobile=
+s. Book and manage flights on the go with <span style=3D"color:#f=
+60;">easyJet mobile</span>.</a>=0D=0A                            =
+</td>=0D=0A                            <td style=3D"height: 53px;=
+ width: 58px;">=0D=0A                                <a href=3D"h=
+ttp://www.easyjet.com/en/mobile">=0D=0A                          =
+          <img src=3D"http://www.easyjet.com/ejcms/cache/medialib=
+rary/Images/confirmation%20email/MobileApp" align=3D"left" align=3D=
+"right" border=3D"0" style=3D"display: block; border: 0px;" heigh=
+t=3D"53" width=3D"53" alt=3D""/>=0D=0A                           =
+     </a>=0D=0A                            </td>=0D=0A           =
+             </tr>=0D=0A                    </table>=0D=0A       =
+         </td>=0D=0A            </tr>=0D=0A        </table>=0D=0A=
+=0D=0A            <table border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"300" style=3D"width: 300px;">=0D=0A            =
+    <tr>=0D=0A                    <td style=3D"width:300px; paddi=
+ng-top:10px">=0D=0A                        <table border=3D"0" ce=
+llpadding=3D"5" cellspacing=3D"0" style=3D"width: 300px; min-heig=
+ht: 40px; background-color:#f2f2f2; border-bottom: 2pt solid #ccc=
+ccc; padding: 5px;">=0D=0A                            <tr>=0D=0A =
+                               <td colspan=3D"2" style=3D"padding=
+-left: 5px; padding-right: 5px; color: black; font-family: 'Helve=
+tica Neue Light', Helvetica, Arial, sans-serif, easyjet_rounded_d=
+emiRg;">=0D=0A                                    <strong><a href=
+=3D"http://www.easyjet.com/en/flight-tracker" style=3D"font-size:=
+ 16px; color: black; text-decoration: none;" >Flight Tracker</a><=
+/strong>=0D=0A                                </td>=0D=0A        =
+                    </tr>=0D=0A                            <tr>=0D=0A=
+                                <td style=3D"padding-left: 5px; p=
+adding-right: 5px; vertical-align: top; font-family: 'Helvetica N=
+eue Light', Helvetica, Arial, sans-serif, easyjet_rounded_demiRg;=
+">=0D=0A                                    <a href=3D"http://www=
+.easyjet.com/en/flight-tracker" style=3D"font-size: 12px; color: =
+black; text-decoration: none;" >For the latest travel updates on =
+your flight, visit the <span style=3D"color:#f60;">easyJet Flight=
+ Tracker</span>.</a>=0D=0A                                </td>=0D=0A=
+                                <td style=3D"height: 53px; width:=
+ 58px;">=0D=0A                                    <a href=3D"http=
+://www.easyjet.com/en/flight-tracker">=0D=0A                     =
+                   <img src=3D"http://www.easyjet.com/ejcms/cache=
+/medialibrary/Images/confirmation%20email/FlightTrackerPlain" ali=
+gn=3D"left" align=3D"right" border=3D"0" style=3D"display: block;=
+ border: 0px;" height=3D"53" width=3D"53" alt=3D"" />=0D=0A      =
+                              </a>=0D=0A                         =
+       </td>=0D=0A                            </tr>=0D=0A        =
+                </table>=0D=0A                    </td>=0D=0A    =
+            </tr>=0D=0A                <tr>=0D=0A                =
+    <td style=3D"width:300px; padding-top:10px">=0D=0A           =
+             <table border=3D"0" cellpadding=3D"5" cellspacing=3D=
+"0" style=3D"width: 300px; min-height: 40px; background-color:#f2=
+f2f2; border-bottom: 2pt solid #cccccc; padding: 5px;">=0D=0A    =
+                        <tr style=3D"display: block">=0D=0A      =
+                          <td colspan=3D"3" style=3D"padding-left=
+: 5px; padding-right: 5px; color: black; font-family: 'Helvetica =
+Neue Light', Helvetica, Arial, sans-serif, easyjet_rounded_demiRg=
+;">=0D=0A                                    <strong style=3D"fon=
+t-size: 16px; color: black; text-decoration: none;" >Connect with=
+ us!</strong>=0D=0A                                </td>=0D=0A   =
+                         </tr>=0D=0A                            <=
+tr>=0D=0A                                <td style=3D"height: 53p=
+x; width: 58px;">=0D=0A                                    <a hre=
+f=3D"https://www.facebook.com/easyJet/">=0D=0A                   =
+                     <img src=3D"http://www.easyjet.com/ejcms/cac=
+he/medialibrary/Images/confirmation%20email/Facebook" align=3D"le=
+ft" align=3D"right" border=3D"0" style=3D"display: block; border:=
+ 0px;" height=3D"53" width=3D"53" alt=3D"" />=0D=0A              =
+                      </a>=0D=0A                                <=
+/td>=0D=0A                                <td style=3D"height: 53=
+px; width: 58px;">=0D=0A                                    <a hr=
+ef=3D"https://twitter.com/easyJet">=0D=0A                        =
+                <img src=3D"http://www.easyjet.com/ejcms/cache/me=
+dialibrary/Images/confirmation%20email/Twitter" align=3D"left" al=
+ign=3D"right" border=3D"0" style=3D"display: block; border: 0px;"=
+ height=3D"53" width=3D"53" alt=3D"" />=0D=0A                    =
+                </a>=0D=0A                                </td>=0D=0A=
+                                <td style=3D"height: 53px; width:=
+ 58px;">=0D=0A                                    <a href=3D"http=
+s://www.youtube.com/user/easyJet">=0D=0A                         =
+               <img src=3D"http://www.easyjet.com/ejcms/cache/med=
+ialibrary/Images/confirmation%20email/YouTube" align=3D"left" ali=
+gn=3D"right" border=3D"0" style=3D"display: block; border: 0px;" =
+height=3D"53" width=3D"53" alt=3D"" />=0D=0A                     =
+               </a>=0D=0A                                </td>=0D=0A=
+                            </tr>=0D=0A                        </=
+table>=0D=0A                    </td>=0D=0A                </tr>=0D=0A=
+            </table>=0D=0A=0D=0A                                 =
+       </td>=0D=0A                                    </tr>=0D=0A=
+                                    =0D=0A                       =
+         </table><!--[if mso]></td></tr></table><![endif]-->=0D=0A=
+                            </td>=0D=0A=0D=0A                    =
+    </tr>=0D=0A=0D=0A=0D=0A=0D=0A<tr>=0D=0A    <td bgcolor=3D"#ff=
+ffff" style=3D"padding-top: 10px;">=0D=0A        <table width=3D"=
+650" align=3D"center" cellspacing=3D"0" cellpadding=3D"0" class=3D=
+"cancellation-message" style=3D"border-top: 3px solid #363636; bo=
+rder-bottom: 3px solid #363636;">=0D=0A            =0D=0A        =
+    =0D=0A            <tr>=0D=0A                <td style=3D"colo=
+r: #000000; padding-top: 10px; padding-bottom: 5px; padding-left:=
+ 10px; padding-right:10px; font-size: 16px; font-family: Cabin, '=
+Helvetica Neue Light', Helvetica, Arial, sans-serif;">=0D=0A     =
+               <strong >24 Hour Cancellation Policy</strong>=0D=0A=
+                </td>=0D=0A            </tr>=0D=0A            <tr=
+>=0D=0A                <td style=3D"font-size: 13px; padding-top:=
+ 5px; padding-bottom:10px; padding-left: 10px; padding-right:10px=
+;" >=0D=0A                    You can cancel your entire booking =
+within the first 24 hours after making it, and we will refund all=
+ your money, minus the cancellation fee. <a href=3D"http://www.ea=
+syjet.com/en/help/booking/cancelling-flights">See our help page f=
+or further information.</a>=0D=0A                </td>=0D=0A=0D=0A=
+            </tr>=0D=0A        </table>=0D=0A    </td>=0D=0A</tr>=
+                    </table>=0D=0A=0D=0A                </td>=0D=0A=
+            </tr>=0D=0A       =0D=0A            <tr align=3D"cent=
+er">=0D=0A                <td bgcolor=3D"#ffffff" width=3D"670">=0D=0A=
+                    <table cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"main-table" align=3D"center">=0D=0A                       =
+ <tr>=0D=0A                            <td style=3D"padding-left:=
+ 10px; padding-top: 0; padding-right: 10px;">=0D=0A              =
+                  <table id=3D"footer" valign=3D"top" align=3D"le=
+ft" cellspacing=3D"0" cellpadding=3D"0">=0D=0A                   =
+                 =0A=0A=0A<tr>=0A    <td style=3D"padding-top: 10=
+px; padding-right: 10px;" bgcolor=3D"#656565">=0A        <table c=
+ellspacing=3D"0" cellpadding=3D"0" align=3D"center">=0A          =
+  <tr>=0A                <td bgcolor=3D"#656565" style=3D"color: =
+#ffffff; font-size: 14px; padding-top: 10px; padding-left: 10px; =
+font-family: 'Helvetica Neue Light', Helvetica, Arial, sans-serif=
+">=0A                    <strong >=0A                        Help=
+ and assistance=0A                    </strong>=0A               =
+ </td>=0A            </tr>=0A            <tr>=0A                <=
+td><!--[if mso]><table valign=3D"top" cellspacing=3D"0" cellpaddi=
+ng=3D"0"><tr><td valign=3D"top" align=3D"left"><![endif]-->=0A   =
+                 <table id=3D"leftcol" valign=3D"top" align=3D"le=
+ft" width=3D"320" cellspacing=3D"0" cellpadding=3D"0" >=0A       =
+                     <tr>=0A                                    <=
+td style=3D"padding-top: 10px; padding-left: 10px;">=0A          =
+                              =0D=0A=0D=0A=0D=0A<table cellspacin=
+g=3D"0" cellpadding=3D"10">=0D=0A    <tr>=0D=0A        <td bgcolo=
+r=3D"#333333" width=3D"150" valign=3D"top">=0D=0A            <tab=
+le cellspacing=3D"0" cellpadding=3D"0">=0D=0A                <tr>=
+=0D=0A                    <td width=3D"130" height=3D"35" valign=3D=
+"top">=0D=0A                        <a href=3D"http://www.easyjet=
+.com/en/help/preparing-to-fly/online-checkin" style=3D"display:bl=
+ock;width:130px;height:35px;color:#ffffff;font-size:11px;text-dec=
+oration:none">=0D=0A                            <b>Check-in onlin=
+e</b>=0D=0A                        </a>=0D=0A                    =
+</td>=0D=0A                </tr>=0D=0A                <tr>=0D=0A =
+                   <td width=3D"130" height=3D"65" valign=3D"bott=
+om" align=3D"right">=0D=0A                        <a href=3D"http=
+://www.easyjet.com/en/help/preparing-to-fly/online-checkin" style=
+=3D"display:block;width:130px;height:65px;">=0D=0A               =
+             <img src=3D"http://www.easyjet.com/ejcms/cache/media=
+library/Images/Confirmation%20email/checkin" style=3D"display: bl=
+ock; border: 0;" />=0D=0A                        </a>=0D=0A      =
+              </td>=0D=0A                </tr>=0D=0A            <=
+/table>=0D=0A        </td>=0D=0A    </tr>=0D=0A</table>=0A       =
+                             </td>=0A                            =
+        <td style=3D"padding-top: 10px; padding-left: 10px;">=0A =
+                                       =0D=0A=0D=0A=0D=0A<table c=
+ellspacing=3D"0" cellpadding=3D"10">=0D=0A    <tr>=0D=0A        <=
+td bgcolor=3D"#333333" width=3D"150" valign=3D"top">=0D=0A       =
+     <table cellspacing=3D"0" cellpadding=3D"0">=0D=0A           =
+     <tr>=0D=0A                    <td width=3D"130" height=3D"35=
+" valign=3D"top">=0D=0A                        <a href=3D"http://=
+www.easyjet.com/en/help/preparing-to-fly/special-assistance" styl=
+e=3D"display:block;width:130px;height:35px;color:#ffffff;font-siz=
+e:11px;text-decoration:none">=0D=0A                            <b=
+>Special assistance</b>=0D=0A                        </a>=0D=0A  =
+                  </td>=0D=0A                </tr>=0D=0A         =
+       <tr>=0D=0A                    <td width=3D"130" height=3D"=
+65" valign=3D"bottom" align=3D"right">=0D=0A                     =
+   <a href=3D"http://www.easyjet.com/en/help/preparing-to-fly/spe=
+cial-assistance" style=3D"display:block;width:130px;height:65px;"=
+>=0D=0A                            <img src=3D"http://www.easyjet=
+.com/ejcms/cache/medialibrary/Images/Confirmation%20email/special=
+assistance" style=3D"display: block; border: 0;" />=0D=0A        =
+                </a>=0D=0A                    </td>=0D=0A        =
+        </tr>=0D=0A            </table>=0D=0A        </td>=0D=0A =
+   </tr>=0D=0A</table>=0A                                    </td=
+>=0A                            </tr>=0A                         =
+   <tr>=0A                                    <td style=3D"paddin=
+g-top: 10px; padding-left: 10px;">=0A                            =
+            =0D=0A=0D=0A=0D=0A<table cellspacing=3D"0" cellpaddin=
+g=3D"10">=0D=0A    <tr>=0D=0A        <td bgcolor=3D"#333333" widt=
+h=3D"150" valign=3D"top">=0D=0A            <table cellspacing=3D"=
+0" cellpadding=3D"0">=0D=0A                <tr>=0D=0A            =
+        <td width=3D"130" height=3D"35" valign=3D"top">=0D=0A    =
+                    <a href=3D"http://www.easyjet.com/en/help/pre=
+paring-to-fly/baggage" style=3D"display:block;width:130px;height:=
+35px;color:#ffffff;font-size:11px;text-decoration:none">=0D=0A   =
+                         <b>Luggage allowance</b>=0D=0A          =
+              </a>=0D=0A                    </td>=0D=0A          =
+      </tr>=0D=0A                <tr>=0D=0A                    <t=
+d width=3D"130" height=3D"65" valign=3D"bottom" align=3D"right">=0D=0A=
+                        <a href=3D"http://www.easyjet.com/en/help=
+/preparing-to-fly/baggage" style=3D"display:block;width:130px;hei=
+ght:65px;">=0D=0A                            <img src=3D"http://w=
+ww.easyjet.com/ejcms/cache/medialibrary/Images/Confirmation%20ema=
+il/luggageallowance" style=3D"display: block; border: 0;" />=0D=0A=
+                        </a>=0D=0A                    </td>=0D=0A=
+                </tr>=0D=0A            </table>=0D=0A        </td=
+>=0D=0A    </tr>=0D=0A</table>=0A                                =
+    </td>=0A                                    <td style=3D"padd=
+ing-top: 10px; padding-left: 10px;">=0A                          =
+              =0D=0A=0D=0A=0D=0A<table cellspacing=3D"0" cellpadd=
+ing=3D"10">=0D=0A    <tr>=0D=0A        <td bgcolor=3D"#333333" wi=
+dth=3D"150" valign=3D"top">=0D=0A            <table cellspacing=3D=
+"0" cellpadding=3D"0">=0D=0A                <tr>=0D=0A           =
+         <td width=3D"130" height=3D"35" valign=3D"top">=0D=0A   =
+                     <a href=3D"http://www.easyjet.com/en/help/pr=
+eparing-to-fly/allocated-seating" style=3D"display:block;width:13=
+0px;height:35px;color:#ffffff;font-size:11px;text-decoration:none=
+">=0D=0A                            <b>Seating</b>=0D=0A         =
+               </a>=0D=0A                    </td>=0D=0A         =
+       </tr>=0D=0A                <tr>=0D=0A                    <=
+td width=3D"130" height=3D"65" valign=3D"bottom" align=3D"right">=
+=0D=0A                        <a href=3D"http://www.easyjet.com/e=
+n/help/preparing-to-fly/allocated-seating" style=3D"display:block=
+;width:130px;height:65px;">=0D=0A                            <img=
+ src=3D"http://www.easyjet.com/ejcms/cache/medialibrary/Images/Co=
+nfirmation%20email/seating" style=3D"display: block; border: 0;" =
+/>=0D=0A                        </a>=0D=0A                    </t=
+d>=0D=0A                </tr>=0D=0A            </table>=0D=0A    =
+    </td>=0D=0A    </tr>=0D=0A</table>=0A                        =
+            </td>=0A                            </tr>=0A         =
+           </table><!--[if mso]></td><td valign=3D"top" align=3D"=
+left"><![endif]-->=0A                    <table id=3D"rightcol" v=
+align=3D"top" align=3D"left" width=3D"320" cellspacing=3D"0" cell=
+padding=3D"0" >=0A                            <tr>=0A            =
+                        <td style=3D"padding-top: 10px; padding-l=
+eft: 10px;">=0A                                        =0D=0A=0D=0A=
+=0D=0A<table cellspacing=3D"0" cellpadding=3D"10">=0D=0A    <tr>=0D=0A=
+        <td bgcolor=3D"#333333" width=3D"150" valign=3D"top">=0D=0A=
+            <table cellspacing=3D"0" cellpadding=3D"0">=0D=0A    =
+            <tr>=0D=0A                    <td width=3D"130" heigh=
+t=3D"35" valign=3D"top">=0D=0A                        <a href=3D"=
+http://www.easyjet.com/en/help/booking/making-a-change" style=3D"=
+display:block;width:130px;height:35px;color:#ffffff;font-size:11p=
+x;text-decoration:none">=0D=0A                            <b>Mana=
+ge flights</b>=0D=0A                        </a>=0D=0A           =
+         </td>=0D=0A                </tr>=0D=0A                <t=
+r>=0D=0A                    <td width=3D"130" height=3D"65" valig=
+n=3D"bottom" align=3D"right">=0D=0A                        <a hre=
+f=3D"http://www.easyjet.com/en/help/booking/making-a-change" styl=
+e=3D"display:block;width:130px;height:65px;">=0D=0A              =
+              <img src=3D"http://www.easyjet.com/ejcms/cache/medi=
+alibrary/Images/Confirmation%20email/manageflights" style=3D"disp=
+lay: block; border: 0;" />=0D=0A                        </a>=0D=0A=
+                    </td>=0D=0A                </tr>=0D=0A       =
+     </table>=0D=0A        </td>=0D=0A    </tr>=0D=0A</table>=0A =
+                                   </td>=0A                      =
+              <td style=3D"padding-top: 10px; padding-left: 10px;=
+">=0A                                        =0D=0A=0D=0A=0D=0A<t=
+able cellspacing=3D"0" cellpadding=3D"10">=0D=0A    <tr>=0D=0A   =
+     <td bgcolor=3D"#333333" width=3D"150" valign=3D"top">=0D=0A =
+           <table cellspacing=3D"0" cellpadding=3D"0">=0D=0A     =
+           <tr>=0D=0A                    <td width=3D"130" height=
+=3D"35" valign=3D"top">=0D=0A                        <a href=3D"h=
+ttp://www.easyjet.com/en/flight-tracker" style=3D"display:block;w=
+idth:130px;height:35px;color:#ffffff;font-size:11px;text-decorati=
+on:none">=0D=0A                            <b>Flight tracker</b>=0D=0A=
+                        </a>=0D=0A                    </td>=0D=0A=
+                </tr>=0D=0A                <tr>=0D=0A            =
+        <td width=3D"130" height=3D"65" valign=3D"bottom" align=3D=
+"right">=0D=0A                        <a href=3D"http://www.easyj=
+et.com/en/flight-tracker" style=3D"display:block;width:130px;heig=
+ht:65px;">=0D=0A                            <img src=3D"http://ww=
+w.easyjet.com/ejcms/cache/medialibrary/Images/Confirmation%20emai=
+l/flighttracker" style=3D"display: block; border: 0;" />=0D=0A   =
+                     </a>=0D=0A                    </td>=0D=0A   =
+             </tr>=0D=0A            </table>=0D=0A        </td>=0D=0A=
+    </tr>=0D=0A</table>=0A                                    </t=
+d>=0A                            </tr>=0A                        =
+    <tr>=0A                                    <td style=3D"paddi=
+ng-top: 10px; padding-left: 10px;">=0A                           =
+             =0D=0A=0D=0A=0D=0A<table cellspacing=3D"0" cellpaddi=
+ng=3D"10">=0D=0A    <tr>=0D=0A        <td bgcolor=3D"#333333" wid=
+th=3D"150" valign=3D"top">=0D=0A            <table cellspacing=3D=
+"0" cellpadding=3D"0">=0D=0A                <tr>=0D=0A           =
+         <td width=3D"130" height=3D"35" valign=3D"top">=0D=0A   =
+                     <a href=3D"http://www.easyjet.com/en/help/pr=
+eparing-to-fly/flying-with-children" style=3D"display:block;width=
+:130px;height:35px;color:#ffffff;font-size:11px;text-decoration:n=
+one">=0D=0A                            <b>Travelling with kids?</=
+b>=0D=0A                        </a>=0D=0A                    </t=
+d>=0D=0A                </tr>=0D=0A                <tr>=0D=0A    =
+                <td width=3D"130" height=3D"65" valign=3D"bottom"=
+ align=3D"right">=0D=0A                        <a href=3D"http://=
+www.easyjet.com/en/help/preparing-to-fly/flying-with-children" st=
+yle=3D"display:block;width:130px;height:65px;">=0D=0A            =
+                <img src=3D"http://www.easyjet.com/ejcms/cache/me=
+dialibrary/Images/Confirmation%20email/travellingwithkids" style=3D=
+"display: block; border: 0;" />=0D=0A                        </a>=
+=0D=0A                    </td>=0D=0A                </tr>=0D=0A =
+           </table>=0D=0A        </td>=0D=0A    </tr>=0D=0A</tabl=
+e>=0A                                    </td>=0A                =
+                    <td style=3D"padding-top: 10px; padding-left:=
+ 10px;">=0A                                        =0D=0A=0D=0A=0D=0A=
+<table cellspacing=3D"0" cellpadding=3D"10">=0D=0A    <tr>=0D=0A =
+       <td bgcolor=3D"#333333" width=3D"150" valign=3D"top">=0D=0A=
+            <table cellspacing=3D"0" cellpadding=3D"0">=0D=0A    =
+            <tr>=0D=0A                    <td width=3D"130" heigh=
+t=3D"35" valign=3D"top">=0D=0A                        <a href=3D"=
+http://www.easyjet.com/en/help/preparing-to-fly/travel-documentat=
+ion" style=3D"display:block;width:130px;height:35px;color:#ffffff=
+;font-size:11px;text-decoration:none">=0D=0A                     =
+       <b>Advance passenger information</b>=0D=0A                =
+        </a>=0D=0A                    </td>=0D=0A                =
+</tr>=0D=0A                <tr>=0D=0A                    <td widt=
+h=3D"130" height=3D"65" valign=3D"bottom" align=3D"right">=0D=0A =
+                       <a href=3D"http://www.easyjet.com/en/help/=
+preparing-to-fly/travel-documentation" style=3D"display:block;wid=
+th:130px;height:65px;">=0D=0A                            <img src=
+=3D"http://www.easyjet.com/ejcms/cache/medialibrary/Images/Confir=
+mation%20email/advancepassengerinformation" style=3D"display: blo=
+ck; border: 0;" />=0D=0A                        </a>=0D=0A       =
+             </td>=0D=0A                </tr>=0D=0A            </=
+table>=0D=0A        </td>=0D=0A    </tr>=0D=0A</table>=0A        =
+                            </td>=0A                            <=
+/tr>=0A                    </table><!--[if mso]></td></tr></table=
+><![endif]-->=0A                </td>=0A            </tr>=0A     =
+       <tr>=0A                <td bgcolor=3D"#656565" style=3D"pa=
+dding-bottom: 10px;" align=3D"center">=0A=0A                    <=
+a href=3D"http://www.easyjet.com/en/help" style=3D"color: #ff6600=
+; font-size: 14px;">=0A                        <strong >Got a dif=
+ferent question? </strong> <img src=3D"http://www.easyjet.com/ejc=
+ms/cache/medialibrary/Images/Confirmation%20email/arrow" alt=3D"a=
+rrow" style=3D"display: block;" border=3D"0" />=0A               =
+     </a>=0A=0A                </td>=0A            </tr>=0A      =
+  </table>=0A    </td>=0A</tr>=0A=0D=0A                          =
+      </table>=0D=0A                            </td>=0D=0A      =
+                  </tr>=0D=0A                    </table>=0D=0A  =
+              </td>=0D=0A            </tr>=0D=0A            <tr>=0D=0A=
+                <td width=3D"670" style=3D"padding-top: 20px;">=0D=0A=
+                    <table cellpadding=3D"0" cellspacing=3D"0" bg=
+color=3D"#ffffff" style=3D"text-align: left; padding-left: 10px; =
+padding-right: 10px; font-size: 12px; font-family: 'Helvetica Neu=
+e Light', Helvetica, Arial, sans-serif;">=0D=0A                  =
+  =0D=0A                        =0D=0A=0D=0A=0D=0A=0D=0A=0D=0A<tr=
+>=0D=0A    <td style=3D"color: #000000; padding-top: 10px; paddin=
+g-bottom: 5px; padding-left: 10px; padding-right:10px; font-size:=
+ 16px; font-family: Cabin, 'Helvetica Neue Light', Helvetica, Ari=
+al, sans-serif;">=0D=0A        <strong >Useful information</stron=
+g>=0D=0A    </td>=0D=0A</tr>=0D=0A=0D=0A<tr>=0D=0A    <td style=3D=
+"margin: 0; padding-top: 6px; padding-left: 10px; padding-right:1=
+0px;">=0D=0A        <strong >Checking in</strong>=0D=0A    </td>=0D=0A=
+</tr>=0D=0A<tr>=0D=0A    <td style=3D"margin: 0;padding-top: 6px;=
+ padding-left: 10px; padding-right:10px;" >=0D=0A        easyJet =
+is a ticket less airline, all you need to check in is your valid =
+passport. You don&#8217;t need to contact us to reconfirm.=0D=0A =
+   </td>=0D=0A</tr>=0D=0A<tr>=0D=0A    <td style=3D"margin: 0;pad=
+ding-top: 6px; padding-left: 10px; padding-right:10px;" >=0D=0A  =
+      <strong>Online check-in</strong> becomes available 30 days =
+before the scheduled departure of the first flight on your bookin=
+g. Any subsequent flights on the booking taking place within 30 d=
+ays from your first flight will also be available for online chec=
+k-in. Online check-in closes 2 hours before the scheduled departu=
+re of the flight.=0D=0A    </td>=0D=0A</tr>=0D=0A<tr>=0D=0A    <t=
+d style=3D"margin: 0;padding-top: 6px; padding-left: 10px; paddin=
+g-right:10px;" >=0D=0A        <a href=3D"http://www.easyjet.com/e=
+n/terms_and_conditions.html#a13">Approved photographic ID</a> is =
+required on all flights, including domestic services.=0D=0A    </=
+td>=0D=0A</tr>=0D=0A<tr>=0D=0A    <td style=3D"margin: 0;padding-=
+top: 6px; padding-left: 10px; padding-right:10px;" >=0D=0A       =
+ <strong >Packing</strong>=0D=0A    </td>=0D=0A</tr>=0D=0A=0D=0A<=
+tr>=0D=0A    <td style=3D"margin: 0;padding-top: 6px; padding-lef=
+t: 10px; padding-right:10px;" >=0D=0A        Take care when packi=
+ng your bags. No dangerous goods may be carried in baggage and ce=
+rtain items may only be carried in certain parts of the aircraft.=
+ Ensure that you comply with our <a href=3D"http://www.easyjet.co=
+m/en/terms_and_conditions.html#a20">hand and hold baggage regulat=
+ions</a> at all times.=0D=0A    </td>=0D=0A</tr>=0D=0A           =
+                 =0D=0A=0D=0A=0D=0A=0D=0A=0D=0A    <tr>=0D=0A    =
+    <td style=3D"margin: 0;padding-top: 6px; padding-left: 10px; =
+padding-right:10px;">=0D=0A            <strong >Conditions of con=
+tract</strong>=0D=0A        </td>=0D=0A    </tr>=0D=0A    <tr>=0D=0A=
+        <td style=3D"font-weight: 500; margin: 0; padding-left: 1=
+0px; padding-right:10px;" >=0D=0A            Carriage is subject =
+to the applicable tariffs, <a href=3D"http://www.easyjet.com/en/t=
+erms-and-conditions">terms and conditions</a>, and <a href=3D"htt=
+p://www.easyjet.com/en/terms-and-conditions">related regulations<=
+/a> which are available on this site or free of charge on applica=
+tion at the office or carrier. Carriage hereunder is subject to t=
+he rules and limitations relating to liability established by the=
+ Montreal Convention.=0D=0A        </td>=0D=0A    </tr>=0D=0A    =
+<tr>=0D=0A        <td style=3D"margin: 0; margin-top: 5px; paddin=
+g-left: 10px; padding-right:10px;">=0D=0A            <strong >Imp=
+ortant notice</strong>=0D=0A        </td>=0D=0A    </tr>=0D=0A   =
+ <tr>=0D=0A        <td style=3D"font-weight: 500; margin: 0; padd=
+ing-left: 10px; padding-right:10px;" >=0D=0A            If the pa=
+ssenger&#8217;s journey involves an ultimate destination or stop =
+in a country other than the country of departure, the Montreal Co=
+nvention may be applicable and the convention governs and in most=
+ cases limits the liability of carriers for death or personal inj=
+ury and in respect of loss or damage to baggage.=0D=0A        </t=
+d>=0D=0A    </tr>=0D=0A    <tr>=0D=0A        <td style=3D"font-we=
+ight: 500; margin-top: 5px; padding-left: 10px; padding-right:10p=
+x;" >=0D=0A            *Europcar <a href=3D"https://cars.easyjet.=
+com/reasons/lpg/?lang=3Dgb&PROMO=3D47408745&xtor=3DES-7003-%5beas=
+yJet_confirmation_email%5d&utm_medium=3Demail&utm_source=3Dconfir=
+mation_email">terms and conditions</a>=0D=0A        </td>=0D=0A  =
+  </tr>=0D=0A            <tr>=0D=0A                <td style=3D"f=
+ont-weight: 500; margin-top: 5px; padding-left: 10px; padding-rig=
+ht: 10px;" >=0D=0A                   =0D=0A                    =0D=0A=
+	Why are we contacting you? You have received this confirmation e=
+mail because you made a booking with easyJet.    =0D=0A	=0D=0A   =
+                 <br />=0D=0AThis sale is not protected under the=
+ <a style=3D"color:#f60; text-decoration:none" href=3D"https://ww=
+w.easyjet.com/en/policy/atol">ATOL Scheme</a>                    =
+<br/>=0D=0A                    <br/>=0D=0A                    =0D=0A=
+	<strong>SUBSCRIPTION INFORMATION</strong>=0D=0A	=0D=0A          =
+          <br/>=0D=0A                    <br/>=0D=0A             =
+       Don=E2=80=99t worry, we know you don=E2=80=99t want to rec=
+eive marketing emails from us.=0D=0A                </td>=0D=0A  =
+          </tr>=0D=0A   =0D=0A    <tr>=0D=0A        <td style=3D"=
+text-align: center; color: #808080; margin-top: 10px; padding-lef=
+t: 10px; padding-right:10px;">=0D=0A            <strong >1997-201=
+9 easyJet airline company ltd. All rights reserved</strong>=0D=0A=
+        </td>=0D=0A    </tr>=0D=0A=0D=0A=0D=0A                   =
+ </table>=0D=0A                </td>=0D=0A            </tr>=0D=0A=
+        =0D=0A        </table>=0D=0A    </body>=0D=0A</html>
+

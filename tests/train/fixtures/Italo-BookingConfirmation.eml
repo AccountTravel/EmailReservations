@@ -1,0 +1,892 @@
+Delivered-To: alastar13rus@gmail.com
+Received: by 2002:aed:3a25:0:0:0:0:0 with SMTP id n34csp1186781qte;
+        Tue, 16 Jul 2019 10:25:45 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqzClvKNg6YwbqqZnpP95nRc0jRQL8K8Hwf+jpfJbmRiL6xMONhS7c+/pjlwMuET4IWDTKA2
+X-Received: by 2002:a50:b388:: with SMTP id s8mr30040506edd.15.1563297945263;
+        Tue, 16 Jul 2019 10:25:45 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1563297945; cv=none;
+        d=google.com; s=arc-20160816;
+        b=FH0J4qYAa7sYTbaMYGv8AvR/oaEmCYVC7Sv3RMAeBTsJQyqFsHCLxqsDmxvvgn70ld
+         cD2YXfvzJJ1NJhgEqoz4zyTdabKoTKAo8U6gyTim34zPA3XO64WLpFkYySr7tn6Bo39V
+         m017lAJFm8VBRUNg/pTW26ErvGJSm0bEGmeD3bSx7f5ceYwn9hvyDxV4Gb4GE+d0AvnB
+         okShJuO5UpWpL7oL4ot2tKzy5q6glCkaLEwpzczPGHidbDBegdafGs93IFFXYpIiwe4t
+         oRdKt3Pt2W4TfkzrynPROWqB7cNpdhit5FUxL+u8FcPUoAQ8HWBqM0hpbJPTuWaZxP4b
+         LAkA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=reply-to:message-id:subject:date:to:from:mime-version
+         :domainkey-signature:dkim-signature;
+        bh=RvO2sJf2P75bk0NsSTqvIAcl3CiuZO+cuYVVSwhl1UY=;
+        b=QkRViW1sdmSCSdNBNiB4QgB54ddeiGfmbWZDtiz24iKaaIO+9GgQ/AY6Ktm/eQ6tdM
+         gUNMGurdg0kfuyWSZ4jOPk/+Skv+gGpgZDoc0e0WklaBqlHfaZF5aRiwuBUl5TI8mcu7
+         LMhh+HcYNgymtzq8vvMiEJKOs3yGHKl+BcN8qx8/Ls+27pBCyyYpVLjB6YLR1We95HZq
+         q5Ui0bAMZZwgtKNG3SBLrOQ9mNbbBUSeRalxKt2nUadP4QKPN52NqOfDWdNwHT7Rjn7y
+         4Pppn2M8Eep9eQ+gDMZaPV1gUaejeg20nxbFj658LX74XWMsGeasgcnTnua3Fd3bE44I
+         PxWQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mail.italotreno.it header.s=15below header.b=nyPWlx0E;
+       spf=pass (google.com: domain of italo@mail.italotreno.it designates 185.75.168.228 as permitted sender) smtp.mailfrom=italo@mail.italotreno.it
+Return-Path: <italo@mail.italotreno.it>
+Received: from send3.email15.net (send3.email15.net. [185.75.168.228])
+        by mx.google.com with ESMTPS id f23si13086853edf.439.2019.07.16.10.25.45
+        for <alastar13rus@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 16 Jul 2019 10:25:45 -0700 (PDT)
+Received-SPF: pass (google.com: domain of italo@mail.italotreno.it designates 185.75.168.228 as permitted sender) client-ip=185.75.168.228;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mail.italotreno.it header.s=15below header.b=nyPWlx0E;
+       spf=pass (google.com: domain of italo@mail.italotreno.it designates 185.75.168.228 as permitted sender) smtp.mailfrom=italo@mail.italotreno.it
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=15below; d=mail.italotreno.it;
+ h=MIME-Version:From:To:Date:Subject:Message-ID:Reply-To:Content-Type; i=italo@mail.italotreno.it;
+ bh=bl7Lnq5DnAVA4aM3iCMTz97/v78=;
+ b=nyPWlx0EHbjIPmToAqEpQViqyDwaEUM4TyFf3cjO2F21t8zxqZzMeb/LM3msE6yq7xQXQOYwsjZE
+   IbUanN/LcoHUXnoQNEvE/wyrf2WA8Kxz9oy+s/RWxhBHH2AnLnEBU8Q5xfBrqJg5+ebYhB5Caru7
+   ViqGbmo3sDRTgZ/LqcU=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=15below; d=mail.italotreno.it;
+ b=nBrl7LnXl4Q3dtpasoPPZmucYKpras6UWyf9o0OiwWDqP5mC4cDpk//NcwsxODUgTfHKLaBUWB0Q
+   pzGDQ0e7vo/H9rNGbEvFSWPCS/HPl33lt2oWRGsXHCl2kV413gLlF7eYod+vgbl0QJlE+DX+KSWg
+   M/7jD2uYyc+cwGS8hi0=;
+Received: by send3.email15.net id h5o49i2g8t4g for <alastar13rus@gmail.com>; Tue, 16 Jul 2019 18:25:44 +0100 (envelope-from <italo@mail.italotreno.it>)
+x-sender: italo@mail.italotreno.it
+x-receiver: alastar13rus@gmail.com
+MIME-Version: 1.0
+X-Mailer: 15Below (http://www.15below.com)
+X-Priority: 3 (Normal)
+From: "Italo" <italo@mail.italotreno.it>
+To: alastar13rus@gmail.com
+Date: Tue, 16 Jul 2019 17:25:44 -0000
+Subject: =?utf-8?B?SXRhbG8gLSBCb29raW5nIENvbmZpcm1hdGlvbg==?=
+Message-ID: <15below-38938790-36453711@DS37383.ns.pasngr4.com>
+X-PASNGR-ID: 36453711
+X-RECIPIENT-ID: 38938790
+X-Campaign-Id: 4361
+Reply-To: <italo@mail.italotreno.it>
+Content-Type: multipart/alternative;
+	 boundary="73134980-a285-41c7-b3e2-08040b93eb40.Alternative"
+
+This is a multi-part message in MIME format.
+
+--73134980-a285-41c7-b3e2-08040b93eb40.Alternative
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="utf-8"; format=flowed
+
+ Ticket Code BFSUKE - Italo 8924 on 07/09 from Firenze SMN (18:54) to Ven=
+ezia ME (20:42) - Ambience Smart Coach 5 Seat 5
+
+--73134980-a285-41c7-b3e2-08040b93eb40.Alternative
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
+
+<!DOCTYPE html>
+<html style=3D"font-family:'Trebuchet MS', Helvetica, sans-serif; ">
+<head>
+<title>Booking Confirmation</title>
+</head>
+<body style=3D"width: 800px; height: 100%; border-spacing: inherit; font-=
+family:'Trebuchet MS', Helvetica, sans-serif; ">
+
+<div style=3D"font-size: 1px; color: #333; display: none !important; mso-=
+hide:all;">Booking Confirmation, Booking contact: Andrei Dokin. Ticket co=
+de: BFSUKE</div>
+
+<table style=3D"border-collapse: collapse;">
+    <tr>
+        <td style=3D"width:500px;">
+            <img src=3D"https://www.italotreno.it/~/media/IDEA/Publishing=
+Images/MAIL/andata_ritorno/img/new/wARAlud.png" alt=3D"">
+        </td>
+        <td style=3D"width:300px;  ">
+            <img src=3D"https://www.italotreno.it/~/media/IDEA/Publishing=
+Images/MAIL/andata_ritorno/img/new/Q3yqBlx.png" alt=3D"">
+        </td>
+    </tr>
+</table>
+
+<script type=3D"application/ld+json">
+[
+{
+"@context": "http://schema.org",
+"@type": "TrainReservation",
+"reservationNumber": "BFSUKE",
+"reservationStatus": "http://schema.org/ReservationConfirmed",
+"underName": "Andrei Dokin",
+"modifyReservationUrl": "https://biglietti.italotreno.it/Booking_Modifica=
+_RicercaBiglietto.aspx",
+"reservationFor": {
+"@type": "TrainTrip",
+"departureStation": {
+"@type": "TrainStation",
+"name": "Firenze SMN"
+},
+"departureTime": "18:54",
+"arrivalStation": {
+"@type": "TrainStation",
+"name": "Venezia ME"
+},
+"arrivalTime": "20:42",
+"trainName": "Italo",
+"trainNumber": "8924",
+"trainCompany": {
+"@type": "Organization",
+"name":"NTV"
+}
+},
+"reservedTicket": {
+"@type": "Ticket",
+"priceCurrency": "EUR",
+"downloadUrl":"https://tickets.italo-ntv.com/190716/BFSUKE-3ca69c45-c57f-=
+61db-a28d-9e15a236134d.pdf",
+"ticketNumber":"BFSUKE",
+"ticketToken": "https://www.italotreno.it/PublishingImages/varie/googleno=
+wqrcode.png",
+"ticketedSeat": {
+"@type": "Seat",
+"seatSection":"5 ",
+"seatNumber":"5",
+}
+}
+}=0A
+
+]
+</script>
+
+<table style=3D"border-collapse: collapse;"  >
+    <tr>
+        <td style=3D"background-color:#A70000;">
+        <!-- border-bottom: #FFF solid 1px; -->
+            <table style=3D"width: 523px; border-collapse: collapse; ">
+                <tr style=3D"background-color:#A70000;">
+                    <td style=3D"width: 10px; height: 100%; ">
+                        <!-- empty cell -->
+                        <p>&nbsp;</p>
+                    </td>
+                    <td style=3D" color:white; background-color:#A70000;=20=
+font-family:'Trebuchet MS', Helvetica, sans-serif; ">
+                        <p style=3D"font-size: 25px; padding-left: 15px;=20=
+margin: 0;">
+                            Booking Confirmation
+                        </p>
+                    </td>
+                </tr>
+                <tr  style=3D"background-color:#A70000;">
+                    <td style=3D"width: 10px; height: 100%; color: white;=
+ ">
+                        <!-- empty cell -->
+                        <p>&nbsp;</p>
+                    </td>
+                    <td style=3D" color:white; background-color:#A70000;=20=
+font-family:'Trebuchet MS', Helvetica, sans-serif; ">
+                        <p style=3D"font-size: 20px; padding-left: 15px;=20=
+margin: 0; ">
+                            Booking contact: Andrei Dokin
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+        <!-- border-bottom: lightgrey solid 1px; -->
+            <table style=3D"width: 277px;
+                border-spacing: inherit;
+                border-collapse: collapse;
+                            padding: 0; margin: 0;">
+                <tr>
+                    <td style=3D"color:#444444; text-align:center; paddin=
+g: 0; margin: 0; font-family:'Trebuchet MS', Helvetica, sans-serif; "><!-=
+- dark grey -->
+                        <p style=3D"font-size: 18px; margin: 16px;  paddi=
+ng: 0; margin: 0;">Ticket code:</p>
+                        <p style=3D"font-size: 50px; margin: 30px;  paddi=
+ng: 0; margin: 0;">BFSUKE</p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<table style=3D"border-bottom: 1px #666666 solid; border-collapse: collap=
+se; border-top: 1px #666666 solid;">
+    <tr>
+        <!-- problem area -->
+        <td>
+            <table style=3D"width:200px;  height:59px;   border-collapse:=
+ collapse; ">
+                <tr style=3D"height:59px; background-color:#444444;  heig=
+ht:59px;">
+                    <td style=3D"width: 10px; height: 100%; ">
+                        <!-- empty cell -->
+                        <p>&nbsp;</p>
+                    </td>
+                    <td style=3D"">
+                        <div style=3D"padding-left: 10px;">
+                            <img src=3D"https://www.italotreno.it/~/media=
+/IDEA/PublishingImages/MAIL/andata_ritorno/img/new/HUGyg9O.png" >
+                        </div>
+                    </td>
+                    <td style=3D"color: white; font-family:'Trebuchet MS'=
+, Helvetica, sans-serif; ">
+                        <p style=3D" text-align: center;padding-right: 45=
+px; ">Going out</p>
+                    </td>
+                </tr>
+            </table>
+=09=09=09
+           =0A
+            <table style=3D" width:200px; height: 200px; border-collapse:=
+ collapse; ">
+             =0A
+=09=09=09
+=09=09=09=09
+                <tr style=3D"background-color:#EFEFEF;"> <!-- lightgrey #=
+999999-->
+                    <td style=3D"font-size: 14px; color: #999999; height:=
+ 20px; padding-top: 9px; padding-left: 15px; font-family:'Trebuchet MS',=20=
+Helvetica, sans-serif; "><!-- medium grey for font on light-->
+                        Departure Date
+                    </td>
+                </tr>
+                <tr style=3D"background-color:#EFEFEF;"> =0A
+                    <td style=3D"font-size: 20px; height: 16px; color: bl=
+ack; line-height: 9px; padding-left: 15px; font-family:'Trebuchet MS', He=
+lvetica, sans-serif; ">
+                        07/09
+                    </td>
+                </tr>
+                <tr style=3D"background-color:#EFEFEF;">
+                    <td style=3D"font-size: 14px; color: #999999; height:=
+ 20px; padding-top: 9px; padding-left: 15px; font-family:'Trebuchet MS',=20=
+Helvetica, sans-serif; ">
+                        Time of dep / arr
+                    </td>
+                </tr>
+                <tr style=3D"background-color:#EFEFEF;">
+                    <td style=3D"font-size: 20px; height: 16px; color: bl=
+ack; line-height: 9px; padding-left: 15px; font-family:'Trebuchet MS', He=
+lvetica, sans-serif; ">
+                           18:54 > 20:42
+                    </td>
+                </tr>
+                <tr style=3D"background-color:#EFEFEF;">
+                    <td style=3D"font-size: 12px; color: #999999; height:=
+ 10px; padding-top: 9px; padding-left: 15px; font-family:'Trebuchet MS',=20=
+Helvetica, sans-serif; ">
+                        Journey
+                    </td>
+                </tr>
+                <tr valign=3D"top" style=3D"background-color:#EFEFEF;">
+                    <td style=3D"font-size: 20px; color: black; line-heig=
+ht: 17px; padding-bottom: 3px; padding-left: 15px; font-family:'Trebuchet=
+ MS', Helvetica, sans-serif; ">
+                            Firenze SMN - <br/>Venezia ME
+                    </td>
+                </tr>
+               =0A
+               =0A
+               =0A
+            </table>
+           =0A
+        </td>
+   =0A
+   =0A
+        <td valign=3D"top">
+            <table style=3D"border-collapse: collapse;" valign=3D"top">
+                <tr valign=3D"top">
+                    <td valign=3D"top">
+                                   =0A
+                                    <!--Jounrney Leg 1 -->
+=09=09=09=09=09=09=09=09=09=09
+                        <table style=3D"position:relative; width:200px; =20=
+height: 59px; border-collapse: collapse;">
+                            <tr style=3D"" valign=3D"top">
+                                <td valign=3D"top">
+                                    <table style=3D"border-collapse: coll=
+apse;">
+                                        <tr>
+                                            <td>
+                                               =0A
+                                               =0A
+                                                <img src=3D"https://www.i=
+talotreno.it/~/media/IDEA/PublishingImages/MAIL/andata_ritorno/img/new/wC=
+YuLFr.png" style=3D"position:absolute; top: 28px; padding-left: 5px; padd=
+ing-top: 25px;"/>
+                                               =0A
+                                            </td>
+                                            <td style=3D"font-family:'Tre=
+buchet MS', Helvetica, sans-serif; padding-top: 25px;">
+                                                <a style=3D"position: abs=
+olute; font-size: 16px; color: black; line-height: 17px; top: 20px; left:=
+ 60px;">
+                                                    <strong>Firenze SMN</=
+strong>
+                                                </a>
+                                                <a style=3D"position: abs=
+olute; font-size: 16px; color: black; line-height: 17px; top: 38px; left:=
+ 60px;">
+                                                    <br /><i>Venezia ME</=
+i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                   =0A
+                                   =0A
+                                </td>
+                            </tr>
+                        </table>
+                       =0A
+                    </td>
+                   =0A
+                    <td valign=3D"top">
+                        <table style=3D"position:relative; width:400px; h=
+eight:59px; border-collapse: collapse;" valign=3D"top">
+                            <tr style=3D"">
+                             =0A
+=09=09=09=09=09=09=09=09
+                                <td style=3D"font-size: 14px; color: #999=
+999; font-family:'Trebuchet MS', Helvetica, sans-serif; padding-top: 25px=
+;">
+                                    Time of dep/arr
+                                </td>
+                               =0A
+                               =0A
+                                <td style=3D"font-size: 14px; color: #999=
+999; width: 44%; font-family:'Trebuchet MS', Helvetica, sans-serif; paddi=
+ng-top: 25px;">
+                                    Train N.
+                                </td>
+                               =0A
+                                <td style=3D"font-size: 14px; color: #999=
+999; font-family:'Trebuchet MS', Helvetica, sans-serif; padding-top: 25px=
+;">
+                                    Ambience
+                                </td>
+                            </tr>
+                           =0A
+                           =0A
+                             =0A
+=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09<tr style=3D"" valign=3D"top">
+=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 16px; height:=
+ 16px; color: black; font-family:'Trebuchet MS', Helvetica, sans-serif; "=
+>
+=09=09=09=09=09=09=09=09=09=09=09=09=0918:54 > 20:42
+=09=09=09=09=09=09=09=09=09=09=09=09</td>
+=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size: 16px; height:=
+ 16px; color: black; font-family:'Trebuchet MS', Helvetica, sans-serif; "=
+>
+=09=09=09=09=09=09=09=09=09=09=09=098924
+=09=09=09=09=09=09=09=09=09=09=09=09</td>
+                                <td style=3D"font-size: 16px; height: 16p=
+x; color: black; font-family:'Trebuchet MS', Helvetica, sans-serif; ">
+                                   =0A
+                                   =0A
+=09=09=09=09=09=09=09=09=09=09=09Smart
+                                   =0A
+                                </td>
+                            </tr>
+                        </table>
+=09=09=09=09=09=09=09=09
+                       =0A
+                       =0A
+=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09
+                       =0A
+                       =0A
+                       =0A
+                       =0A
+                       =0A
+                        <table style=3D"width:400px; height:66px; border-=
+top: 1px solid lightgrey; border-collapse: collapse;">
+                            <tr style=3D"width:29%;">
+                                <td style=3D"font-size: 14px; color: #999=
+999; width: 100px; font-family:'Trebuchet MS', Helvetica, sans-serif; ">
+                                    Coach
+                                </td>
+                                <td style=3D"font-size: 14px; color: #999=
+999; font-family:'Trebuchet MS', Helvetica, sans-serif; ">
+                                    Seat
+                                </td>
+                            </tr>
+                            <tr style=3D"">
+                                <td style=3D"font-size: 16px; height: 16p=
+x; color: black; font-family:'Trebuchet MS', Helvetica, sans-serif; ">
+                                 =0A
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09    5
+=09=09=09=09=09=09=09=09=09=09   =0A
+=09=09=09=09=09=09=09=09=09=09
+                                    =0A
+                                </td>
+                                <td style=3D"font-size: 16px; height: 16p=
+x; color: black; font-family:'Trebuchet MS', Helvetica, sans-serif; ">
+                                   =0A
+                                   =0A
+                                        5
+                                   =0A
+                                   =0A
+                                </td>
+                            </tr>
+                        </table>
+                       =0A
+                       =0A
+                       =0A
+                    </td>
+                </tr>
+            </table>
+           =0A
+           =0A
+           =0A
+            <table valign=3D"top" style=3D"border-collapse: collapse;">
+                <tr valign=3D"top">
+                    <td>
+                                   =0A
+=09=09=09=09=09=09=09=09=09=09
+                       =0A
+                    </td>
+                    <td>
+                                   =0A
+=09=09=09=09=09=09=09=09=09=09
+                       =0A
+                                   =0A
+=09=09=09=09=09=09=09=09=09=09
+                       =0A
+                                   =0A
+           =0A
+                       =0A
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<!-- <table style=3D"height:3px; width: 800px;">
+    <tr>
+        <td style=3D"">
+            <p style=3D"height: 3px; width: 800px; background-color: #666=
+666; padding: 0; margin: 0;">
+                <span style=3D"display: none; "></span>
+            </p>
+        </td>
+    </tr>
+</table> -->
+<!--  -->
+<!-- PART TWO -->
+<!--  -->
+<table>
+    <tr>
+        <td>
+       =0A
+           =0A
+           =0A
+           =0A
+            <table style=3D" width:200px; height: 200px; border-collapse:=
+ collapse; ">
+           =0A
+           =0A
+=09=09=09=09
+       =0A
+        <td valign=3D"top">
+            <table style=3D"border-collapse: collapse;" valign=3D"top">
+                <tr valign=3D"top">
+                    <td>
+                    <!--Journey 2 Leg 1 -->
+                   =0A
+                       =0A
+                       =0A
+                    </td>
+                    <td>
+                      <table style=3D"position:relative; width:400px; hei=
+ght:59px; border-collapse: collapse; ">
+                            <tr style=3D"" valign=3D"top">
+                             =0A
+=09=09=09=09=09=09=09=09
+                       =0A
+                        =0A
+=09=09=09=09=09=09=09
+                       =0A
+                       =0A
+                       =0A
+                       =0A
+                    </td>
+                </tr>
+            </table>
+           =0A
+           =0A
+           =0A
+            <table valign=3D"top" style=3D"border-collapse: collapse;">
+                <tr valign=3D"top">
+                    <td>
+                           =0A
+=09=09=09=09=09=09=09=09
+                       =0A
+                    </td>
+                    <td>
+                      =0A
+=09=09=09=09=09=09=09
+                       =0A
+                       =0A
+=09=09=09=09=09=09
+                       =0A
+                       =0A
+=09=09=09=09=09=09
+                       =0A
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<!-- PDF AREA -->
+
+<table style=3D"background-color:#DDDDDD; height:42px; width: 800px; font=
+-size: 12px; border-collapse: collapse;">
+   =0A
+    <tr style=3D"height:60px;">
+        <td style=3D"width: 10px; height: 100%; ">
+            <!-- empty cell -->
+            <p>&nbsp;</p>
+        </td>
+        <td style=3D"width: 40px; background-color:#DDDDDD;">
+            <div style=3D"padding:10px; ">
+                <img src=3D"https://www.italotreno.it/~/media/IDEA/Publis=
+hingImages/MAIL/andata_ritorno/img/new/eBj3wfL.png" >
+            </div>
+           =0A
+        </td>
+        <td style=3D"width: 750px; background-color:#DDDDDD; font-family:=
+'Trebuchet MS', Helvetica, sans-serif; ">
+            <p style=3D"padding-top: 5px; font-size: 14px; color: black;"=
+>
+                <a href=3D"https://tickets.italo-ntv.com/190716/BFSUKE-3c=
+a69c45-c57f-61db-a28d-9e15a236134d.pdf">Click here and download the PDF t=
+o see the details about all passengers.</a>
+            </p>
+        </td>
+    </tr>
+
+</table>
+
+<!-- iphone holder section (modify ticket etc) -->
+
+<table style=3D"width: 800px; border-bottom: 1px lightgrey solid; border-=
+collapse: collapse; ">
+    <tr>
+        <td style=3D"width:137px; height: 145px; ">
+            <img src=3D"https://www.italotreno.it/~/media/IDEA/Publishing=
+Images/MAIL/andata_ritorno/img/new/zCiZ1oN.png" style=3D"padding-left: 15=
+px;   padding-top: 15px;">
+        </td>
+        <td style=3D"width: 600px;  font-size: 14px; margin: 0; ">
+            <table style=3D"border-collapse: collapse;">
+                <tr>
+                    <td style=3D"font-family:'Trebuchet MS', Helvetica, s=
+ans-serif; ">
+                        <p style=3D"margin: 0; color: black;">
+                            In case you need to change your ticket or buy=
+ new one, you can do it also by your mobile phone on=0A
+                            <a href=3D"m.italotreno.it">m.italotreno.it</=
+a>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style=3D"font-family:'Trebuchet MS', Helvetica, s=
+ans-serif; ">
+                        <p style=3D"margin: 0; color: black;">Italo Trans=
+portation Terms and Conditions are available at italotreno.it
+                        <a href=3D"italotreno.it">italotreno.it</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <table style=3D"border-collapse: collapse;">
+                        <tr style=3D"height: 60px;">
+                            <td style=3D"width: 219px; font-family:'Trebu=
+chet MS', Helvetica, sans-serif; ">
+                                <p style=3D"font-size: 18px; color: #AC1C=
+3E; width: 113px;  height: 25px; padding: 0; margin: 0; width: 113px; lin=
+e-height: 16px; padding-right: 40px;">
+                                    <i> Have a nice journey <br /> Italo.=
+</i>
+                                </p>
+                            </td>
+                            <td style=3D"text-align: right;">
+                                <table style=3D"  width: 160px; backgroun=
+d-color: #AC1C3E; text-align: center; border-collapse:collapse;">
+                                  =0A
+                                    <tr style=3D"height:40px;">
+                                      =0A
+                                        <td>
+                                            <a href=3D"https://biglietti.=
+italotreno.it/Booking_Modifica_RicercaBiglietto.aspx?Culture=3Den-US" sty=
+le=3D"text-decoration: none; color: #FFF;   border: none;   font-size: 14=
+px;  font-family:'Trebuchet MS', Helvetica, sans-serif;  text-align: cent=
+er; ">
+                                            CHANGE TICKET
+                                            </a>
+                                        </td>
+                                    =0A
+                                    </tr>
+                =0A
+                                </table>
+                            </td>
+                            <td style=3D"text-align: right;">
+                                <table style=3D"  width: 221px; backgroun=
+d-color: #AC1C3E; text-align: center; border-collapse:collapse;">
+                         =0A
+                                    <tr style=3D"height:40px;">
+                                    =0A
+
+                                        <td style=3D"">
+
+                                            <a href=3D"https://www.italot=
+reno.it/?sc_lang=3Den" style=3D"text-decoration: none; color: #FFF;   bor=
+der: none;   font-size: 14px;  font-family:'Trebuchet MS', Helvetica, san=
+s-serif;  text-align: center; ">
+                                                BUY NEW TICKET
+                                            </a>
+
+                                        </td>
+
+                                 =0A
+                                    </tr>
+                               =0A
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<!-- grey bar -->
+
+<!-- <table style=3D"height:1px; width: 800px;">
+    <tr>
+        <td style=3D"position: relative; ">
+            <p style=3D"height: 2px; width: 800px; background-color: ligh=
+tgrey; padding: 0; margin: 0; position: absolute; left: -2px; top: 0;"></=
+p>
+        </td>
+    </tr>
+</table> -->
+<table style=3D"width:800px; height: 145px; border-collapse: collapse; ">=
+
+    <tr>
+        <td>
+            <img src=3D"https://www.italotreno.it/~/media/IDEA/Publishing=
+Images/MAIL/andata_ritorno/img/new/UYhGvia.png" alt=3D"" style=3D" paddin=
+g:10px;">
+        </td>
+        <td style=3D"text-align: left;">
+            <table style=3D"width: 600px; border-collapse: collapse; ">
+                <tr>
+                    <td style=3D"font-family:'Trebuchet MS', Helvetica, s=
+ans-serif; width: 590px;  ">
+                        <p style=3D"font-size: 14px;">With the new Italo=20=
+free application you can buy your tickets , consult timetables , manage y=
+our travel and much more . Download now the version for iOS devices from=20=
+the App Store, or the version for Android devices from Google Play</p>
+                    </td>
+                </tr>
+                <tr style=3D"width:600px; ">
+                    <td style=3D"width:600px; ">
+                        <table style=3D"text-align:right; width:100%; bor=
+der-collapse: collapse; ">
+                            <tr style=3D"text-align:right; ">
+                                <td style=3D"text-align:right;">
+                                    <img src=3D"https://www.italotreno.it=
+/~/media/IDEA/PublishingImages/MAIL/andata_ritorno/img/new/6INy02a.png" a=
+lt=3D"" style=3D"text-align:right;">
+
+                                    <a href=3D"" style=3D"text-decoration=
+: none; color: white; ">&nbsp;</a>
+                       =0A
+                                    <img src=3D"https://www.italotreno.it=
+/~/media/IDEA/PublishingImages/MAIL/andata_ritorno/img/new/NyJh2zT.pngg"=20=
+alt=3D"" style=3D"text-align:right;">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<table style=3D"width:800px; height: 100px; border-bottom: 1px lightgrey=20=
+solid; border-collapse: collapse; ">                                    =20=
+                                                               =0A
+    <tr>                                                                =20=
+                                      =0A
+        <td width=3D"146">                                              =20=
+                                                        =0A
+            <img src=3D"https://www.italotreno.it/~/media/IDEA/Publishing=
+Images/MAIL/andata_ritorno/img/italo_piu_logo_s.png" alt=3D"" style=3D" p=
+adding:3px;">                                                           =20=
+                                           =0A
+        </td>                                                           =20=
+                                          =0A
+        <td width=3D"642" style=3D"text-align: left;">                  =20=
+                                                                        =20=
+         =0A
+            <table width=3D"642" style=3D"width: 630px; border-collapse:=20=
+collapse; ">                                                            =20=
+                                         =0A
+                <tr>                                                    =20=
+                                                  =0A
+                    <td width=3D"634" style=3D"font-family:'Trebuchet MS'=
+, Helvetica, sans-serif; width: 590px;  ">                              =20=
+                                                              =0A
+                        <p style=3D"font-size: 14px;">If your ticket is a=
+ssociated with an Italo Pi&ugrave; account. Only the account holder can t=
+ravel on this ticket. Please check the passenger details  entered so as t=
+o avoid incurring any possible fines.</p>                               =20=
+                                                         =0A
+                    </td>                                               =20=
+                                                      =0A
+                </tr>                                                   =20=
+                                                  =0A
+                <tr style=3D"width:600px; ">                            =20=
+                                                                        =20=
+
+                    <td style=3D"width:600px; ">                        =20=
+                                                                        =20=
+   =0A
+                                                                        =20=
+                                          =0A
+                    </td>                                               =20=
+                                                      =0A
+                </tr>                                                   =20=
+                                                  =0A
+            </table>                                                    =20=
+                                                  =0A
+        </td>                                                           =20=
+                                          =0A
+    </tr>                                                               =20=
+                                      =0A
+</table>
+<!-- app store logos and self advertising area  -->
+
+<table style=3D"width:800px; height: 100px; border-bottom: 1px lightgrey=20=
+solid; border-collapse: collapse; ">                                    =20=
+                                                               =0A
+    <tr>                                                                =20=
+                                      =0A
+        <td width=3D"146">                                              =20=
+                                                        =0A
+            <img src=3D"https://www.italotreno.it/~/media/IDEA/Publishing=
+Images/MAIL/andata_ritorno/img/new/luggage_icon.png" alt=3D"" style=3D" p=
+adding:3px;">                                                           =20=
+                                           =0A
+        </td>                                                           =20=
+                                          =0A
+        <td width=3D"642" style=3D"text-align: left;">                  =20=
+                                                                        =20=
+         =0A
+            <table width=3D"642" style=3D"width: 630px; border-collapse:=20=
+collapse; ">                                                            =20=
+                                         =0A
+                <tr>                                                    =20=
+                                                  =0A
+                    <td width=3D"634" style=3D"font-family:'Trebuchet MS'=
+, Helvetica, sans-serif; width: 590px;  ">                              =20=
+                                                              =0A
+                        <p style=3D"font-size: 14px;">Your luggage can be=
+ stored in the easily accessible luggage-racks and glove compartments ins=
+ide our Smart coaches or under the seats and in the luggage spaces in the=
+ coach vestibules. In Smart ambience only, no baggage measuring over 75x5=
+3x30 cm is allowed.</p>                                                 =20=
+                                       =0A
+                    </td>                                               =20=
+                                                      =0A
+                </tr>                                                   =20=
+                                                  =0A
+                <tr style=3D"width:600px; ">                            =20=
+                                                                        =20=
+
+                    <td style=3D"width:600px; ">                        =20=
+                                                                        =20=
+   =0A
+                                                                        =20=
+                                          =0A
+                    </td>                                               =20=
+                                                      =0A
+                </tr>                                                   =20=
+                                                  =0A
+            </table>                                                    =20=
+                                                  =0A
+        </td>                                                           =20=
+                                          =0A
+    </tr>                                                               =20=
+                                      =0A
+</table>
+<!-- banner -->
+<table style=3D"padding-top:5px; padding-left:2.5px; padding-bottom:10px;=
+">
+    <tr>
+        <td>
+         =0A
+            <a href=3D"https://www.italotreno.it/en/support-contacts/sale=
+s-channels#app">
+                <img alt=3D"" src=3D"https://www.italotreno.it/~/media/ID=
+EA/PublishingImages/MAIL/pubblicita/Banner_PDF/default_EN.jpg" title=3D""=
+/>
+            </a>
+           =0A
+        </td>
+    </tr>
+</table>
+<!-- bottom links -->
+<table style=3D"width: 800px; font-size:12px; color: #FFF; height: 49px;=20=
+background-color: #7B0800; border-collapse: collapse;">
+    <tr>
+        <td style=3D"width: 10px; height: 100%;  ">
+            <!-- empty cell -->
+            <p>&nbsp;</p>
+        </td>
+        <td style=3D"color: white; font-family:'Trebuchet MS', Helvetica,=
+ sans-serif; ">
+            <p style=3D"padding-left: 14px; color: #FFF;"><a style=3D"col=
+or: white;" href=3D"https://www.italotreno.it/it/privacy-policy">Privacy<=
+/a> | <a style=3D"color: white;" href=3D"https://www.italotreno.it/it/cop=
+yright-note-legali">Legal notes & Copyright</a> | <a style=3D"color: whit=
+e;" href=3D"https://www.italotreno.it/it/termini-condizioni">Transportati=
+on terms and Conditions</a></p>
+        </td>
+    </tr>
+</table>
+
+<!-- copyright ntv logo -->
+
+<table style=3D"width: 800px; height: 65px; background-color: #A70000; co=
+lor: #FFFFFF; font-size:12px; border-collapse: collapse;">
+    <tr>
+        <td style=3D"width: 10px; height: 100%;  ">
+            <!-- empty cell -->
+            <p>&nbsp;</p>
+        </td>
+        <td style=3D"font-family:'Trebuchet MS', Helvetica, sans-serif; "=
+>
+            <p style=3D"padding-left: 14px; color: #FFFFFF; ">.ITALO &egr=
+ave; un marchio di Italo S.p.a. <br />&copy; - P.IVA: 09247981005</p>
+        </td>
+        <td style=3D"text-align: right; ">
+            <img src=3D"https://www.italotreno.it/~/media/IDEA/Publishing=
+Images/MAIL/andata_ritorno/img/new/logo_italo.png" alt=3D"" style=3D" pad=
+ding-right: 12px; text-align: right;">
+        </td>
+        <td style=3D"width: 12px; height: 100%;  ">
+            <!-- empty cell -->
+            <p>&nbsp;</p>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
+
+--73134980-a285-41c7-b3e2-08040b93eb40.Alternative--

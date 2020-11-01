@@ -1,0 +1,1263 @@
+Delivered-To: alastar13rus@gmail.com
+Received: by 2002:aed:3a25:0:0:0:0:0 with SMTP id n34csp1166182qte;
+        Tue, 16 Jul 2019 10:08:09 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqwl/zOMmE0z/QyN5b4m4JIp0HgqO5y51KvpEFAiCMbiYWLEdk+7o/kh3HbZ7qyvoi5Beb9L
+X-Received: by 2002:a17:906:5859:: with SMTP id h25mr27036983ejs.202.1563296887906;
+        Tue, 16 Jul 2019 10:08:07 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1563296887; cv=none;
+        d=google.com; s=arc-20160816;
+        b=dstkjObTuvyTb7lGLHX3xGJdeUbcPxfWRu5ZuujeO2Yq0eQqK8cSjm7liww15FEt7f
+         HN0T3VuKI2TP+TFSp7/baIIulD83ppj6MO0c255749Lf9y8sIn9DRSCITvIohwjW8pTT
+         mio0H2npaRLD8i8mJneWV/gRchTCwMsw6kIDpStXFY2Z718TU0dxK2HQDmGQnTScFj0h
+         5zf6z1vqfCajdHy2S5T6XUcUH4/mIgSzCrn8Ala7rib4A+TuV/qVYzcW87T8DuWTKEIY
+         Qvb43my6YG/ZC7qZ6ztVYcPfQSy/2u1vViz4fqTO9pOP186jfl8RSUez/NY9OKfZ+/GS
+         ayxw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=content-transfer-encoding:reply-to:message-id:subject:date:to:from
+         :mime-version:domainkey-signature:dkim-signature;
+        bh=f58I0nJQHT6COsAwEWqXdjnNHA1YHxm3uVKoSc5gTEg=;
+        b=Tl9wfHTJWII3phLWn0Fw66EGbbGP1Z5g48658lrnVZ3f2Mq698VttS0umWqKMTru4m
+         qkq1K9gBmhXYjWGA4Uw3YHLGjFx55IxEuGjEOLA562va6xfLKLcbXhx76zwqQMG713G/
+         LHGXtyH732H/41wRPJS7sc1FsWxfB1wVdivDe6adcvpNAle2T0XSECFc6eg/4MxA9tYh
+         hp9ddxKFURJ+zVITGD3l6GLoOyH4TPwIDU+9gxuLn2nHHrL+iD9WECHFfrWjLIjcGRXb
+         cMiOU87+PVUg20YMs/se63aShRqjgzaM6yNIxnPBXTZQz2HeRKXl31v2/t8iB0xzdd7a
+         qiQQ==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@mail.italotreno.it header.s=15below header.b=aCwJk6K9;
+       spf=pass (google.com: domain of italo@mail.italotreno.it designates 185.75.168.228 as permitted sender) smtp.mailfrom=italo@mail.italotreno.it
+Return-Path: <italo@mail.italotreno.it>
+Received: from send3.email15.net (send3.email15.net. [185.75.168.228])
+        by mx.google.com with ESMTPS id a1si3761540ejn.200.2019.07.16.10.08.07
+        for <alastar13rus@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 16 Jul 2019 10:08:07 -0700 (PDT)
+Received-SPF: pass (google.com: domain of italo@mail.italotreno.it designates 185.75.168.228 as permitted sender) client-ip=185.75.168.228;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@mail.italotreno.it header.s=15below header.b=aCwJk6K9;
+       spf=pass (google.com: domain of italo@mail.italotreno.it designates 185.75.168.228 as permitted sender) smtp.mailfrom=italo@mail.italotreno.it
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=15below; d=mail.italotreno.it;
+ h=MIME-Version:From:To:Date:Subject:Message-ID:Reply-To:Content-Transfer-Encoding:Content-Type; i=italo@mail.italotreno.it;
+ bh=0bey2LT7fu1VPpVFTX+qbO9pstY=;
+ b=aCwJk6K98m1r4oVWoE/KzrEqCHuB53PRkp1wHSPxVuGstxZz8rM7wbLpgIAhOwzwyXicWhcLy0Ve
+   q8yvcczN5VepkenXncNwjPRuSG3HzU2/WtlyIm1z/xqhVA4Ctm+ds8Nxk8PuKuXOFhzGDkgOJuC7
+   421blCpiELGJNRIOvps=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=15below; d=mail.italotreno.it;
+ b=o7wEJCNKczFPNUihLotzwrvkBEYC+OliMoBmhzV37C92WpNsDGsRW1Wm4/F8b1V1uxFIi8AOWTxt
+   5rOFguXPicysKWpi2lQn9N/AWBbx47JgESWM+g79gQq8ETQPfsO9y2q9ZV+T5l7m608dCFtWTGwG
+   E9yTfhv+HYAZapoea2s=;
+Received: by send3.email15.net id h5o27e2g8t44 for <alastar13rus@gmail.com>; Tue, 16 Jul 2019 18:08:07 +0100 (envelope-from <italo@mail.italotreno.it>)
+x-sender: italo@mail.italotreno.it
+x-receiver: alastar13rus@gmail.com
+MIME-Version: 1.0
+X-Mailer: 15Below (http://www.15below.com)
+X-Priority: 3 (Normal)
+From: "Italo" <italo@mail.italotreno.it>
+To: alastar13rus@gmail.com
+Date: Tue, 16 Jul 2019 17:08:07 -0000
+Subject: =?utf-8?B?SXRhbG8g4oCTIENvbmZlcm1hIEFjcXVpc3Rv?=
+Message-ID: <15below-38936956-36452120@DS37383.ns.pasngr4.com>
+X-PASNGR-ID: 36452120
+X-RECIPIENT-ID: 38936956
+X-Campaign-Id: 4361
+Reply-To: <italo@mail.italotreno.it>
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
+
+<!DOCTYPE html>                                                         =20=
+                                      =0A
+<html style=3D"font-family:'Trebuchet MS',     Helvetica,  sans-serif; ">=
+                                                                        =20=
+                   =0A
+<head>                                                                  =20=
+                                  =0A
+<title>Conferma acquisto biglietto</title>                              =20=
+                                                                      =0A
+</head>                                                                 =20=
+                                  =0A
+<body style=3D"width: 800px; height: 100%; border-spacing: inherit; font-=
+family:'Trebuchet MS',    Helvetica,  sans-serif; ">                    =20=
+                                                                       =0A
+                                                                        =20=
+                              =0A
+<div style=3D"font-size: 1px; color: #333; display: none !important; mso-=
+hide:all;">Conferma acquisto biglietto, Contatto della prenotazione: Andr=
+ei Dokin. CODICE BIGLIETTO RC45QT</div>
+                                                                        =20=
+                              =0A
+                                                                        =20=
+                              =0A
+<table style=3D"border-collapse: collapse;">                            =20=
+                                                                        =20=
+
+    <tr>                                                                =20=
+                                      =0A
+        <td style=3D"width:500px;">                                     =20=
+                                                                =0A
+            <img src=3D"https://www.italotreno.it/~/media/IDEA/Publishing=
+Images/MAIL/andata_ritorno/img/new/wARAlud.png" alt=3D"">               =20=
+                                                                        =20=
+             =0A
+        </td>                                                           =20=
+                                          =0A
+        <td style=3D"width:300px;  ">                                   =20=
+                                                                =0A
+            <img src=3D"https://www.italotreno.it/~/media/IDEA/Publishing=
+Images/MAIL/andata_ritorno/img/new/Q3yqBlx.png" alt=3D"">               =20=
+                                                                        =20=
+             =0A
+        </td>                                                           =20=
+                                          =0A
+    </tr>                                                               =20=
+                                      =0A
+</table>                                                                =20=
+                                      =0A
+                                                                        =20=
+                              =0A
+<script type=3D"application/ld+json">
+[
+{
+"@context": "http://schema.org",
+"@type": "TrainReservation",
+"reservationNumber": "RC45QT",
+"reservationStatus": "http://schema.org/ReservationConfirmed",
+"underName": "Andrei Dokin",
+"modifyReservationUrl": "https://biglietti.italotreno.it/Booking_Modifica=
+_RicercaBiglietto.aspx",
+"reservationFor": {
+"@type": "TrainTrip",
+"departureStation": {
+"@type": "TrainStation",
+"name": "Roma Ter."
+},
+"departureTime": "06:15",
+"arrivalStation": {
+"@type": "TrainStation",
+"name": "Firenze SMN"
+},
+"arrivalTime": "07:46",
+"trainName": "Italo",
+"trainNumber": "8902",
+"trainCompany": {
+"@type": "Organization",
+"name":"NTV"
+}
+},
+"reservedTicket": {
+"@type": "Ticket",
+"priceCurrency": "EUR",
+"downloadUrl":"https://tickets.italo-ntv.com/190716/RC45QT-623bccc1-cc2f-=
+00d3-ed4a-20531a878f95.pdf",
+"ticketNumber":"RC45QT",
+"ticketToken": "https://www.italotreno.it/PublishingImages/varie/googleno=
+wqrcode.png",
+"ticketedSeat": {
+"@type": "Seat",
+"seatSection":"4 ",
+"seatNumber":"9",
+}
+}
+}=0A
+
+]
+</script>
+                                                                        =20=
+                              =0A
+<table style=3D"border-collapse: collapse;"  >                         =0A
+    <tr>                         =0A
+        <td style=3D"background-color:#A70000;">                        =20=
+=0A
+        <!-- border-bottom: #FFF solid 1px; -->                         =20=
+
+            <table style=3D"width: 523px; border-collapse: collapse; "> =20=
+                       =0A
+                <tr style=3D"background-color:#A70000;">                =20=
+        =0A
+                    <td style=3D"width: 10px; height: 100%; ">          =20=
+              =0A
+                        <!-- empty cell -->                         =0A
+                        <p>&nbsp;</p>                         =0A
+                    </td>                         =0A
+                    <td style=3D" color:white; background-color:#A70000;=20=
+font-family:'Trebuchet MS',  Helvetica,  sans-serif; ">                 =20=
+     =0A
+                        <p style=3D"font-size: 25px; padding-left: 15px;=20=
+margin: 0;">                         =0A
+                            Conferma acquisto biglietto                 =20=
+       =0A
+                        </p>                         =0A
+                    </td>                         =0A
+                </tr>                         =0A
+                <tr  style=3D"background-color:#A70000;">               =20=
+         =0A
+                    <td style=3D"width: 10px; height: 100%; color: white;=
+ ">                         =0A
+                        <!-- empty cell -->                         =0A
+                        <p>&nbsp;</p>                         =0A
+                    </td>                         =0A
+                    <td style=3D" color:white; background-color:#A70000;=20=
+font-family:'Trebuchet MS',  Helvetica,  sans-serif; ">                 =20=
+     =0A
+                        <p style=3D"font-size: 18px; padding-left: 15px;=20=
+margin: 0; ">                         =0A
+                            Contatto prenotazione: Andrei Dokin         =20=
+              =0A
+                        </p>                         =0A
+                    </td>                         =0A
+                </tr>                         =0A
+            </table>                         =0A
+        </td>                         =0A
+        <td>                         =0A
+        <!-- border-bottom: lightgrey solid 1px; -->                    =20=
+    =0A
+            <table style=3D"width: 277px;                         =0A
+                border-spacing: inherit;                         =0A
+                border-collapse: collapse;                         =0A
+                            padding: 0; margin: 0;">                    =20=
+    =0A
+                <tr>                         =0A
+                    <td style=3D"color:#444444; text-align:center; paddin=
+g: 0; margin: 0; font-family:'Trebuchet MS',  Helvetica,  sans-serif; "><=
+!-- dark grey -->                       =0A
+                        <p style=3D"font-size: 18px; margin: 16px;  paddi=
+ng: 0; margin: 0;">CODICE BIGLIETTO</p>                         =0A
+                        <p style=3D"font-size: 50px; margin: 30px;  paddi=
+ng: 0; margin: 0;">RC45QT</p>                         =0A
+                    </td>                         =0A
+                </tr>                         =0A
+            </table>                         =0A
+        </td>                         =0A
+    </tr>                         =0A
+</table>                         =0A
+                         =0A
+                         =0A
+                         =0A
+<table style=3D"border-bottom: 1px #666666 solid; border-collapse: collap=
+se; border-top: 1px #666666 solid;">                         =0A
+    <tr>                         =0A
+        <!-- problem area -->                         =0A
+        <td>                         =0A
+            <table style=3D"width:200px;  height:59px;   border-collapse:=
+ collapse; ">                         =0A
+                <tr style=3D"height:59px; background-color:#444444;  heig=
+ht:59px;">                         =0A
+                    <td style=3D"width: 10px; height: 100%; ">          =20=
+              =0A
+                        <!-- empty cell -->                         =0A
+                        <p>&nbsp;</p>                         =0A
+                    </td>                         =0A
+                    <td style=3D"">                         =0A
+                        <div style=3D"padding-left: 10px;">             =20=
+           =0A
+                            <img src=3D"https://www.italotreno.it/~/media=
+/IDEA/PublishingImages/MAIL/andata_ritorno/img/new/HUGyg9O.png" >       =20=
+                 =0A
+                        </div>                         =0A
+                    </td>                         =0A
+                    <td style=3D"color: white; font-family:'Trebuchet MS'=
+,  Helvetica,  sans-serif; ">                       =0A
+                        <p style=3D"font-size: 20px; text-align: center;p=
+adding-right: 45px; ">Andata</p>                         =0A
+                    </td>                         =0A
+                </tr>                         =0A
+            </table>                         =0A
+           =0A
+            <table style=3D" width:200px; height: 200px; border-collapse:=
+ collapse; ">
+                        =0A
+           =0A
+=09=09=09=09              =0A
+                <tr style=3D"background-color:#EFEFEF;"> <!-- lightgrey #=
+999999-->                         =0A
+                    <td style=3D"font-size: 14px; color: #999999; height:=
+ 20px; padding-top: 9px; padding-left: 15px; font-family:'Trebuchet MS',=20=
+ Helvetica,  sans-serif; "><!-- medium grey for font on light-->        =20=
+              =0A
+                        Data                         =0A
+                    </td>                         =0A
+                </tr>                         =0A
+                <tr style=3D"background-color:#EFEFEF;">                =20=
+          =0A
+                    <td style=3D"font-size: 20px; height: 16px; color: bl=
+ack; line-height: 9px; padding-left: 15px; font-family:'Trebuchet MS',  H=
+elvetica,  sans-serif; ">                       =0A
+                         07/09                     =0A
+                    </td>                         =0A
+                </tr>                         =0A
+                <tr style=3D"background-color:#EFEFEF;">                =20=
+        =0A
+                    <td style=3D"font-size: 14px; color: #999999; height:=
+ 20px; padding-top: 9px; padding-left: 15px; font-family:'Trebuchet MS',=20=
+ Helvetica,  sans-serif; ">                       =0A
+                        Orari                         =0A
+                    </td>                         =0A
+                </tr>                         =0A
+                <tr style=3D"background-color:#EFEFEF;">                =20=
+        =0A
+                    <td style=3D"font-size: 20px; color: black; line-heig=
+ht: 17px; padding-left: 15px; font-family:'Trebuchet MS',  Helvetica,  sa=
+ns-serif; ">                       =0A
+=09=09=09=09=09=0906:15 > 07:46                        =0A
+                    </td>                         =0A
+                </tr>                         =0A
+                <tr style=3D"background-color:#EFEFEF;">                =20=
+        =0A
+                    <td style=3D"font-size: 12px; color: #999999; height:=
+ 10px; padding-top: 9px; padding-left: 15px; font-family:'Trebuchet MS',=20=
+ Helvetica,  sans-serif; ">                       =0A
+                        Itinerario                         =0A
+                    </td>                         =0A
+                </tr>                         =0A
+                <tr valign=3D"top" style=3D"background-color:#EFEFEF;"> =20=
+                       =0A
+                    <td style=3D"font-size: 20px; color: black; line-heig=
+ht: 17px; padding-bottom: 3px; padding-left: 15px; font-family:'Trebuchet=
+ MS',  Helvetica,  sans-serif; ">                       =0A
+=09=09=09=09=09=09Roma Ter. - <br/>Firenze SMN                         =0A
+                    </td>                         =0A
+                </tr>  =0A
+                    =0A
+              =0A
+               =0A
+                                         =0A
+            </table>                         =0A
+                                     =0A
+        </td>=0A
+       =0A
+                                  =0A
+        <td valign=3D"top">                         =0A
+            <table style=3D"border-collapse: collapse;" valign=3D"top" >=20=
+                        =0A
+                <tr valign=3D"top">                         =0A
+                    <td valign=3D"top"> =0A
+                    =0A
+                      <!--Jounrney Leg 1 -->
+=09=09=09=09=09                                          =0A
+                        <table style=3D"position:relative; width:200px; =20=
+height: 59px; border-collapse: collapse;">                         =0A
+                            <tr style=3D"" valign=3D"top">              =20=
+          =0A
+                                <td valign=3D"top">                     =20=
+   =0A
+                                    <table style=3D"border-collapse: coll=
+apse;">                         =0A
+                                        <tr>                         =0A
+                                            <td>                        =20=
+=0A
+                                                                        =20=
+=0A
+                                                                        =20=
+=0A
+                                                <img src=3D"https://www.i=
+talotreno.it/~/media/IDEA/PublishingImages/MAIL/andata_ritorno/img/new/wC=
+YuLFr.png" style=3D"position:absolute; top: 28px; padding-left: 5px; padd=
+ing-top: 25px;"/>                         =0A
+                                                                        =20=
+=0A
+                                            </td>                       =20=
+ =0A
+                                            <td style=3D"font-family:'Tre=
+buchet MS',  Helvetica,  sans-serif; padding-top: 25px;">               =20=
+       =0A
+                                                <a style=3D"position: abs=
+olute; font-size: 16px; color: black; line-height: 17px; top: 20px; left:=
+ 60px;">                         =0A
+                                                    <strong>Roma Ter.</st=
+rong>                         =0A
+                                                </a>                    =20=
+    =0A
+                                                <a style=3D"position: abs=
+olute; font-size: 16px; color: black; line-height: 17px; top: 38px; left:=
+ 60px;">                         =0A
+                                                    <br /><i>Firenze SMN<=
+/i>                    =0A
+                                                </a>                    =20=
+    =0A
+                                            </td>                       =20=
+ =0A
+                                        </tr>                         =0A
+                                    </table>                         =0A
+                                                             =0A
+                                                             =0A
+                                </td>                         =0A
+                            </tr>                         =0A
+                        </table>                         =0A
+                                               =0A
+                    </td>
+                                          =0A
+                    <td valign=3D"top">                                 =20=
+                =0A
+                        <table style=3D"position:relative; width:400px; h=
+eight:59px; border-collapse: collapse; " valign=3D"top">                =20=
+        =0A
+                            <tr style=3D"">
+                            =0A
+=09=09=09=09=09=09=09=09                    =0A
+                                <td style=3D"font-size: 14px; color: #999=
+999; font-family:'Trebuchet MS',  Helvetica,  sans-serif; padding-top: 25=
+px;">                       =0A
+                                    Orari                         =0A
+                                </td>                         =0A
+                                                         =0A
+                                                      =0A
+                                <td style=3D"font-size: 14px; color: #999=
+999; width: 44%; font-family:'Trebuchet MS',  Helvetica,  sans-serif; pad=
+ding-top: 25px;">                       =0A
+                                    N.Treno                         =0A
+                                </td>                         =0A
+                                                         =0A
+                                <td style=3D"font-size: 14px; color: #999=
+999; font-family:'Trebuchet MS',  Helvetica,  sans-serif; padding-top: 25=
+px;">                       =0A
+                                    Ambiente                         =0A
+                                </td>                         =0A
+                            </tr>                         =0A
+                            <tr style=3D"" valign=3D"top">              =20=
+          =0A
+                                <td style=3D"font-size: 16px; height: 16p=
+x; color: black; font-family:'Trebuchet MS',  Helvetica,  sans-serif; ">=20=
+                      =0A
+                                    06:15 > 07:46                       =20=
+ =0A
+                                </td>                         =0A
+                                <td style=3D"font-size: 16px; height: 16p=
+x; color: black; font-family:'Trebuchet MS',  Helvetica,  sans-serif; ">=20=
+                      =0A
+                                    8902                        =0A
+                                </td>                         =0A
+                                <td style=3D"font-size: 16px; height: 16p=
+x; color: black; font-family:'Trebuchet MS',  Helvetica,  sans-serif; ">=20=
+                      =0A
+                                                             =0A
+                                                             =0A
+                                        Smart                        =0A
+                                                             =0A
+                                </td>                         =0A
+                            </tr>                         =0A
+                        </table>                         =0A
+                        =0A
+                                                =0A
+                        =0A
+=09=09=09=09=09=09=09                        =0A
+                                                 =0A
+                       =0A
+                                                 =0A
+                        =0A
+                                               =0A
+                                                 =0A
+                        <table style=3D"width:400px; height:66px; border-=
+top: 1px solid lightgrey; border-collapse: collapse;">                  =20=
+      =0A
+                            <tr style=3D"width:29%;">                   =20=
+     =0A
+                                <td style=3D"font-size: 14px; color: #999=
+999; width: 100px; font-family:'Trebuchet MS',  Helvetica,  sans-serif; "=
+>                       =0A
+                                    Carrozza                         =0A
+                                </td>                         =0A
+                                <td style=3D"font-size: 14px; color: #999=
+999; font-family:'Trebuchet MS',  Helvetica,  sans-serif; ">            =20=
+          =0A
+                                    Posto                         =0A
+                                </td>                         =0A
+                            </tr>                         =0A
+                            <tr style=3D"">                         =0A
+                                <td style=3D"font-size: 16px; height: 16p=
+x; color: black; font-family:'Trebuchet MS',  Helvetica,  sans-serif; ">=20=
+ =0A
+                                 =0A
+=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09=09
+=09=09=09=09=09=09=09=09=09=09    4
+=09=09=09=09=09=09=09=09=09=09   =0A
+=09=09=09=09=09=09=09=09=09=09
+                                                                        =20=
+ =0A
+                                </td>                         =0A
+                                <td style=3D"font-size: 16px; height: 16p=
+x; color: black; font-family:'Trebuchet MS',  Helvetica,  sans-serif; ">=20=
+                      =0A
+                                   =0A
+                                   =0A
+                                        9
+                                   =0A
+                                                           =0A
+                                </td>                         =0A
+                            </tr>                         =0A
+                        </table>                         =0A
+                                                 =0A
+                        =0A
+                                                =0A
+                    </td>                         =0A
+                </tr>                         =0A
+            </table>                         =0A
+       =0A
+            =0A
+                                    =0A
+            <table valign=3D"top" style=3D"border-collapse: collapse;  ">=
+                         =0A
+                <tr valign=3D"top">                         =0A
+                    <td>                         =0A
+                        =0A
+=09=09=09=09=09=09=09=09=09=09  =0A
+                                              =0A
+                    </td>                         =0A
+                    <td>                         =0A
+                         =0A
+=09=09=09=09=09=09=09=09=09=09
+                                                 =0A
+                            =0A
+=09=09=09=09=09=09=09=09=09=09                         =0A
+                                                 =0A
+             =0A
+            =0A
+                                                =0A
+                    </td>                         =0A
+                </tr>                         =0A
+            </table>                         =0A
+        </td>                         =0A
+    </tr>                         =0A
+</table>                         =0A
+                         =0A
+                         =0A
+<!--  -->                         =0A
+<!-- PART TWO -->                         =0A
+<!--  -->                         =0A
+                         =0A
+<table>                         =0A
+    <tr>                         =0A
+        <td>                         =0A
+          =0A
+            =0A
+                                    =0A
+           =0A
+            <table style=3D" width:200px; height: 200px; border-collapse:=
+ collapse; ">
+               =0A
+           =0A
+=09=09=09=09
+                               =0A
+        <td valign=3D"top">                         =0A
+            <table style=3D"border-collapse: collapse;" valign=3D"top"> =20=
+                       =0A
+                <tr valign=3D"top">                         =0A
+                    <td>                         =0A
+                    <!--Journey 2 Leg 1 -->
+                   =0A
+                       =0A
+                                                 =0A
+                    </td>                         =0A
+                    <td>                         =0A
+                                              =0A
+                        <table style=3D"position:relative; width:400px; h=
+eight:59px; border-collapse: collapse; ">                         =0A
+                            <tr style=3D"" valign=3D"top" >=0A
+                            =0A
+=09=09=09=09=09=09=09=09
+                              =0A
+                        =0A
+=09=09=09=09=09=09=09
+                                                 =0A
+                       =0A
+                        =0A
+                                                =0A
+                    </td>                         =0A
+                </tr>                         =0A
+            </table>                         =0A
+         =0A
+            =0A
+                                    =0A
+            <table valign=3D"top" style=3D"border-collapse: collapse;  ">=
+                         =0A
+                <tr valign=3D"top">                         =0A
+                    <td>                         =0A
+                       =0A
+=09=09=09=09=09=09=09=09=0A
+                                                =0A
+                    </td>                         =0A
+                    <td>                         =0A
+                       =0A
+=09=09=09=09=09=09=09
+                                                 =0A
+                       =0A
+=09=09=09=09=09=09  =0A
+                                              =0A
+                       =0A
+=09=09=09=09=09=09
+                                                 =0A
+                    </td>                         =0A
+                </tr>                         =0A
+            </table>                         =0A
+        </td>                         =0A
+    </tr>                         =0A
+</table>                                                                =20=
+                                   =0A
+                                                                        =20=
+                              =0A
+<!-- PDF AREA -->                                                       =20=
+                                              =0A
+                                                                        =20=
+                              =0A
+<table style=3D"background-color:#DDDDDD; height:42px; width: 800px; font=
+-size: 12px; border-collapse: collapse;margin-top:5px;">                =20=
+                                                                        =20=
+          =0A
+                                                                        =20=
+                                  =0A
+    <tr style=3D"height:60px;">                                         =20=
+                                                            =0A
+        <td style=3D"width: 10px; height: 100%; ">                      =20=
+                                                                        =20=
+       =0A
+            <!-- empty cell -->                                         =20=
+                                                          =0A
+            <p>&nbsp;</p>                                               =20=
+                                                      =0A
+        </td>                                                           =20=
+                                          =0A
+        <td style=3D"width: 40px; background-color:#DDDDDD;">           =20=
+                                                                        =20=
+               =0A
+            <div style=3D"padding:10px; ">                              =20=
+                                                                        =20=
+
+                <img src=3D"https://www.italotreno.it/~/media/IDEA/Publis=
+hingImages/MAIL/andata_ritorno/img/new/eBj3wfL.png" >                   =20=
+                                                                        =20=
+       =0A
+            </div>                                                      =20=
+                                              =0A
+                                                                        =20=
+                                          =0A
+        </td>                                                           =20=
+                                          =0A
+        <td style=3D"width: 750px; background-color:#DDDDDD; font-family:=
+'Trebuchet MS', Helvetica, sans-serif; ">                               =20=
+                                                            =0A
+            <p style=3D"padding-top: 5px; font-size: 14px; color: black;"=
+>                                                                       =20=
+                               =0A
+                <a href=3D"https://tickets.italo-ntv.com/190716/RC45QT-62=
+3bccc1-cc2f-00d3-ed4a-20531a878f95.pdf">Per visualizzare i dettagli di tu=
+tti i passeggeri scarica il PDF</a>                                     =20=
+                                                              =0A
+            </p>                                                        =20=
+                                              =0A
+        </td>                                                           =20=
+                                          =0A
+    </tr>                                                               =20=
+                                      =0A
+                                                                        =20=
+                              =0A
+</table>                                                                =20=
+                                      =0A
+<br />
+
+<!-- Loyalty Boxes Section --> =0A
+
+
+                                                                        =20=
+                              =0A
+<!-- iphone holder section (modify ticket etc) -->
+
+<table style=3D"width: 800px; border-bottom: 1px lightgrey solid; border-=
+collapse: collapse; ">                                                  =20=
+                                                   =0A
+    <tr>                                                                =20=
+                                      =0A
+        <td style=3D"width:137px; height: 145px; ">                     =20=
+                                                                        =20=
+       =0A
+            <img src=3D"https://www.italotreno.it/~/media/IDEA/Publishing=
+Images/MAIL/andata_ritorno/img/new/zCiZ1oN.png" style=3D"padding-left: 15=
+px;   padding-top: 15px;">                                              =20=
+                                                     =0A
+        </td>                                                           =20=
+                                          =0A
+        <td style=3D"width: 600px;  font-size: 14px; margin: 0; ">      =20=
+                                                                        =20=
+                       =0A
+            <table style=3D"border-collapse: collapse;">                =20=
+                                                                        =20=
+           =0A
+                <tr>                                                    =20=
+                                                  =0A
+                    <td style=3D"font-family:'Trebuchet MS', Helvetica, s=
+ans-serif; ">                                                           =20=
+                                =0A
+                        <p style=3D"margin: 0; color: black;">          =20=
+                                                                        =20=
+                   =0A
+                            Se hai bisogno di modificare il tuo biglietto=
+ o acquistarne uno nuovo    ora puoi farlo                              =20=
+                                                                 =0A
+                            anche dal tuo cellulare collegandoti al nostr=
+o sito mobile                                                           =20=
+                                         =0A
+                            <a href=3D"m.italotreno.it">m.italotreno.it</=
+a>                                                                      =20=
+                               =0A
+                        </p>                                            =20=
+                                                          =0A
+                    </td>                                               =20=
+                                                      =0A
+                </tr>                                                   =20=
+                                                  =0A
+                <tr>                                                    =20=
+                                                  =0A
+                    <td style=3D"font-family:'Trebuchet MS', Helvetica,sa=
+ns-serif; ">                                                            =20=
+                               =0A
+                        <p style=3D"margin: 0; color: black;">Il contratt=
+o di trasporto Italo S.p.A. &egrave; consultabile sul sito              =20=
+                                                                        =20=
+               =0A
+                        <a href=3D"italotreno.it">italotreno.it</a></p> =20=
+                                                                        =20=
+                           =0A
+                    </td>                                               =20=
+                                                      =0A
+                </tr>                                                   =20=
+                                                  =0A
+                <tr>                                                    =20=
+                                                  =0A
+                    <table style=3D"border-collapse: collapse;">        =20=
+                                                                        =20=
+                   =0A
+                        <tr style=3D"height: 60px;">                    =20=
+                                                                        =20=
+       =0A
+                            <td style=3D"width: 219px; font-family:'Trebu=
+chet MS',Helvetica,sans-serif; ">                                       =20=
+                                                    =0A
+                                <p style=3D"font-size: 18px; color: #AC1C=
+3E; width: 113px;  height: 25px; padding: 0; margin: 0; width: 113px; lin=
+e-height: 16px; padding-right: 40px;">                                  =20=
+                                                                  =0A
+                                    <i> Buon Viaggio. <br /> Italo.</i> =20=
+                                                                        =20=
+                         =0A
+                                </p>                                    =20=
+                                                                  =0A
+                            </td>                                       =20=
+                                                              =0A
+                            <td style=3D"text-align: right;">           =20=
+                                                                        =20=
+               =0A
+                                <table style=3D"  width: 160px; backgroun=
+d-color: #AC1C3E; text-align: center; border-collapse:collapse;">       =20=
+                                                                        =20=
+                      =0A
+                                                                        =20=
+                                                              =0A
+                                    <tr style=3D"height:40px;">         =20=
+                                                                        =20=
+                   =0A
+                                                                        =20=
+                                                                  =0A
+                                        <td>                            =20=
+                                                                        =20=
+ =0A
+                                            <a href=3D"https://biglietti.=
+italotreno.it/Booking_Modifica_RicercaBiglietto.aspx" style=3D"text-decor=
+ation: none; color: #FFF;   border: none;   font-size: 14px;  font-family=
+:'Trebuchet MS' ,  Helvetica ,  sans-serif;  text-align: center; ">     =20=
+                                                                        =20=
+                =0A
+                                            MODIFICA BIGLIETTO          =20=
+                                                                        =20=
+                 =0A
+                                            </a>                        =20=
+                                                                        =20=
+     =0A
+                                        </td>                           =20=
+                                                                        =20=
+ =0A
+                                                                        =20=
+                                                                  =0A
+                                    </tr>                               =20=
+                                                                      =0A
+                                                                        =20=
+                                              =0A
+                                </table>                                =20=
+                                                                      =0A
+                            </td>                                       =20=
+                                                              =0A
+                            <td style=3D"text-align: right;">           =20=
+                                                                        =20=
+               =0A
+                                <table style=3D"  width: 221px; backgroun=
+d-color: #AC1C3E; text-align: center; border-collapse:collapse;">       =20=
+                                                                        =20=
+                      =0A
+                                                                        =20=
+                                                      =0A
+                                    <tr style=3D"height:40px;">         =20=
+                                                                        =20=
+                   =0A
+                                                                        =20=
+                                                                  =0A
+                                                                        =20=
+                              =0A
+                                        <td style=3D"">                 =20=
+                                                                        =20=
+           =0A
+                                                                        =20=
+                              =0A
+                                            <a href=3D"https://www.italot=
+reno.it" style=3D"text-decoration: none; color: #FFF;   border: none;   f=
+ont-size: 14px;  font-family:'Trebuchet MS',    Helvetica,   sans-serif;=20=
+ text-align: center; ">                                                 =20=
+                                             =0A
+                                                ACQUISTA NUOVO BIGLIETTO=20=
+                                                                        =20=
+                             =0A
+                                            </a>                        =20=
+                                                                        =20=
+     =0A
+                                                                        =20=
+                              =0A
+                                        </td>                           =20=
+                                                                        =20=
+ =0A
+                                                                        =20=
+                              =0A
+                                                                        =20=
+                                                              =0A
+                                    </tr>                               =20=
+                                                                      =0A
+                                                                        =20=
+                                                              =0A
+                                </table>                                =20=
+                                                                      =0A
+                            </td>                                       =20=
+                                                              =0A
+                        </tr>                                           =20=
+                                                          =0A
+                    </table>                                            =20=
+                                                          =0A
+                </tr>                                                   =20=
+                                                  =0A
+            </table>                                                    =20=
+                                                  =0A
+        </td>                                                           =20=
+                                          =0A
+    </tr>                                                               =20=
+                                      =0A
+</table>                                                                =20=
+                                      =0A
+                                                                        =20=
+                              =0A
+<!-- grey bar -->                                                       =20=
+                                              =0A
+<table style=3D"width:800px; height: 145px; border-collapse: collapse; ">=
+                                                                        =20=
+                           =0A
+    <tr>                                                                =20=
+                                      =0A
+        <td>                                                            =20=
+                                          =0A
+            <img src=3D"https://www.italotreno.it/~/media/IDEA/Publishing=
+Images/MAIL/andata_ritorno/img/new/UYhGvia.png" alt=3D"" style=3D" paddin=
+g:10px;">                                                               =20=
+                                       =0A
+        </td>                                                           =20=
+                                          =0A
+        <td style=3D"text-align: left;">                                =20=
+                                                                    =0A
+            <table style=3D"width: 600px; border-collapse: collapse; "> =20=
+                                                                        =20=
+                           =0A
+                <tr>                                                    =20=
+                                                  =0A
+                    <td style=3D"font-family:'Trebuchet MS', Helvetica, s=
+ans-serif; width: 590px;  ">                                            =20=
+                                                =0A
+                        <p style=3D"font-size: 14px;">Con la nuova applic=
+azione gratuita di Italo puoi acquistare i tuoi biglietti     consultare=20=
+gli orari    gestire i tuoi viaggi e molto altro. Scarica subito la versi=
+one per dispositivi iOS da App Store    o la versione per dispositivi And=
+roid da Google Play.</p>                                                =20=
+                                        =0A
+                    </td>                                               =20=
+                                                      =0A
+                </tr>                                                   =20=
+                                                  =0A
+                <tr style=3D"width:600px; ">                            =20=
+                                                                        =20=
+
+                    <td style=3D"width:600px; ">                        =20=
+                                                                        =20=
+   =0A
+                        <table style=3D"text-align:right; width:100%; bor=
+der-collapse: collapse; ">                                              =20=
+                                                       =0A
+                            <tr style=3D"text-align:right; ">           =20=
+                                                                        =20=
+               =0A
+                                <td style=3D"text-align:right;">        =20=
+                                                                        =20=
+                   =0A
+                                    <img src=3D"https://www.italotreno.it=
+/~/media/IDEA/PublishingImages/MAIL/andata_ritorno/img/new/6INy02a.png" a=
+lt=3D"" style=3D"text-align:right;">                                    =20=
+                                                               =0A
+                                                                        =20=
+                              =0A
+                                    <a href=3D"" style=3D"text-decoration=
+: none; color: white; ">&nbsp;</a>                                      =20=
+                                                             =0A
+                                                                        =20=
+                                                      =0A
+                                    <img src=3D"https://www.italotreno.it=
+/~/media/IDEA/PublishingImages/MAIL/andata_ritorno/img/new/NyJh2zT.pngg"=20=
+alt=3D"" style=3D"text-align:right;">                                   =20=
+                                                                   =0A
+                                </td>                                   =20=
+                                                                  =0A
+                            </tr>                                       =20=
+                                                              =0A
+                        </table>                                        =20=
+                                                              =0A
+                    </td>                                               =20=
+                                                      =0A
+                </tr>                                                   =20=
+                                                  =0A
+            </table>                                                    =20=
+                                                  =0A
+        </td>                                                           =20=
+                                          =0A
+    </tr>                                                               =20=
+                                      =0A
+</table>                                                                =20=
+                                       =0A
+<!-- grey bar -->                                                       =20=
+                                              =0A
+
+<table style=3D"width:800px; height: 100px; border-bottom: 1px lightgrey=20=
+solid; border-collapse: collapse; ">                                    =20=
+        =0A
+    <tr>                                                                =20=
+                                      =0A
+        <td width=3D"146">                                              =20=
+                                                        =0A
+            <img src=3D"https://www.italotreno.it/~/media/IDEA/Publishing=
+Images/MAIL/andata_ritorno/img/italo_piu_logo_s.png" alt=3D"" style=3D" p=
+adding:3px;">                                                           =20=
+                                           =0A
+        </td>                                                           =20=
+                                          =0A
+        <td width=3D"642" style=3D"text-align: left;">                  =20=
+                                                                        =20=
+         =0A
+            <table width=3D"642" style=3D"width: 630px; border-collapse:=20=
+collapse; ">                                                            =20=
+                                         =0A
+                <tr>                                                    =20=
+                                                  =0A
+                    <td width=3D"634" style=3D"font-family:'Trebuchet MS'=
+, Helvetica, sans-serif; width: 590px;  ">                              =20=
+                                                              =0A
+                        <p style=3D"font-size: 14px;">Il tuo biglietto &e=
+grave; associato ad un codice Italo Pi&ugrave; e pu&ograve; essere viaggi=
+ato solamente dal titolare dell'account. Verifica i dati riportati sul ti=
+tolo di viaggio per non incorrere in sanzioni.</p>                      =20=
+                                                                  =0A
+                    </td>                                               =20=
+                                                      =0A
+                </tr>                                                   =20=
+                                                  =0A
+                <tr style=3D"width:600px; ">                            =20=
+                                                                        =20=
+
+                    <td style=3D"width:600px; ">                        =20=
+                                                                        =20=
+   =0A
+                                                                        =20=
+                                          =0A
+                    </td>                                               =20=
+                                                      =0A
+                </tr>                                                   =20=
+                                                  =0A
+            </table>                                                    =20=
+                                                  =0A
+        </td>                                                           =20=
+                                          =0A
+    </tr>                                                               =20=
+                                      =0A
+</table>
+
+
+<table style=3D"width:800px; height: 100px; border-bottom: 1px lightgrey=20=
+solid; border-collapse: collapse; ">                                    =20=
+        =0A
+    <tr>                                                                =20=
+                                      =0A
+        <td width=3D"146">                                              =20=
+                                                        =0A
+            <img src=3D"https://www.italotreno.it/~/media/IDEA/Publishing=
+Images/MAIL/andata_ritorno/img/new/luggage_icon.png" alt=3D"" style=3D" p=
+adding:3px;">                                                           =20=
+                                           =0A
+        </td>                                                           =20=
+                                          =0A
+        <td width=3D"642" style=3D"text-align: left;">                  =20=
+                                                                        =20=
+         =0A
+            <table width=3D"642" style=3D"width: 630px; border-collapse:=20=
+collapse; ">                                                            =20=
+                                         =0A
+                <tr>                                                    =20=
+                                                  =0A
+                    <td width=3D"634" style=3D"font-family:'Trebuchet MS'=
+, Helvetica, sans-serif; width: 590px;  ">                              =20=
+                                                              =0A
+                        <p style=3D"font-size: 14px;">Con riferimento ai=20=
+soli viaggi in ambiente Smart, si ricorda che non sono ammessi bagagli di=
+ dimensioni superiori a 75x53x30. Qualora lo spazio nelle cappelliere non=
+ dovesse essere sufficiente si prega di utilizzare le bagagliere poste ne=
+i vestiboli. Non sono ammessi bagagli straordinari di dimensioni che ecce=
+dano quelle indicate.</p>                                               =20=
+                                         =0A
+                    </td>                                               =20=
+                                                      =0A
+                </tr>                                                   =20=
+                                                  =0A
+                <tr style=3D"width:600px; ">                            =20=
+                                                                        =20=
+
+                    <td style=3D"width:600px; ">                        =20=
+                                                                        =20=
+   =0A
+                                                                        =20=
+                                          =0A
+                    </td>                                               =20=
+                                                      =0A
+                </tr>                                                   =20=
+                                                  =0A
+            </table>                                                    =20=
+                                                  =0A
+        </td>                                                           =20=
+                                          =0A
+    </tr>                                                               =20=
+                                      =0A
+</table>                                                                =20=
+                                      =0A
+<!-- banner -->                                                         =20=
+                                          =0A
+<table style=3D"padding-top:5px; padding-left:2.5px; padding-bottom:10px;=
+">                                                                      =20=
+                               =0A
+    <tr>                                                                =20=
+                                      =0A
+        <td>                                                            =20=
+                                          =0A
+                                                                        =20=
+                                        =0A
+            <a href=3D"https://biglietti.italotreno.it/Booking_Acquisto_R=
+icerca.aspx">                                                           =20=
+                                          =0A
+                <img alt=3D"" src=3D"https://www.italotreno.it/~/media/ID=
+EA/PublishingImages/MAIL/pubblicita/Banner_PDF/default_IT.jpg"  title=3D"=
+"/>                                                                     =20=
+                                =0A
+            </a>                                                        =20=
+                                              =0A
+                                                                        =20=
+                                         =0A
+        </td>                                                           =20=
+                                          =0A
+    </tr>                                                               =20=
+                                      =0A
+</table>
+<!-- Stupinigi=0A
+
+<table width=3D"822" style=3D"width:800px; height: 80px; border-bottom: 1=
+px lightgrey solid; border-collapse: collapse; background: #f4f4f4;">   =20=
+                                         =0A
+    <tr>                                                                =20=
+                                      =0A
+        <td width=3D"92">                                               =20=
+                                                       =0A
+            <img src=3D"https://www.italotreno.it/~/media/IDEA/Publishing=
+Images/MAIL/andata_ritorno/img/logo_stupinigi.png" alt=3D"" style=3D" pad=
+ding:10px; width:80;">                                                  =20=
+                                                 =0A
+        </td>                                                           =20=
+                                          =0A
+        <td width=3D"538" style=3D"text-align: left;">                  =20=
+                                                                        =20=
+         =0A
+            <table width=3D"531" style=3D"width: 500px; border-collapse:=20=
+collapse; ">                                                            =20=
+                                         =0A
+                <tr>                                                    =20=
+                                                  =0A
+                    <td width=3D"523" style=3D"font-family:'Trebuchet MS'=
+, Helvetica, sans-serif; width: 480px;  ">                              =20=
+                                                              =0A
+                        <p style=3D"font-size: 14px;">Con Italo vai a STU=
+PINIGI SONIC PARK. Acquista subito il biglietto ridotto per il concerto c=
+he desideri, promozione valida fino a 2 biglietti entro il 10 giugno.</p>=
+                                                                        =20=
+                =0A
+                    </td>                                               =20=
+                                                      =0A
+                </tr>                                                   =20=
+                                                  =0A
+                <tr style=3D"width:500; ">                              =20=
+                                                                      =0A
+                    <td style=3D"width:500; ">                          =20=
+                                                                        =20=
+ =0A
+                                                                        =20=
+                                          =0A
+                    </td>                                               =20=
+                                                      =0A
+                </tr>                                                   =20=
+                                                  =0A
+            </table>                                                    =20=
+                                                                        =20=
+                                <td width=3D"154" style=3D"text-align: ce=
+nter;">                                                                 =20=
+                                   =0A
+            <table width=3D"125" height=3D"50" style=3D"width: 125 px; bo=
+rder-collapse: collapse;>
+           =0A
+                <tr style=3D"width:174; padding-right:20 px; text-align:=20=
+center;">                                                               =20=
+                                     =0A
+                    <td style=3D"width:174; text-align: center; border: 1=
+px; padding-right:20 px;">                              =0A
+                                                                        =20=
+                                          =0A
+                    </td>                                               =20=
+                                                      =0A
+                </tr>                                                   =20=
+                                                  =0A
+            </table>                                                    =20=
+                                                  =0A
+        </td>                                                           =20=
+                                          =0A
+    </tr>                                                               =20=
+             =0A
+</table>                                                 =0A
+<br>                           =0A
+-->
+
+                                            =0A
+
+                                                                        =20=
+                              =0A
+<!-- bottom links -->                                                   =20=
+                                                  =0A
+<table style=3D"width: 800px; font-size:12px; color: #FFF; height: 49px;=20=
+background-color: #7B0800; border-collapse: collapse;">                 =20=
+                                                                        =20=
+          =0A
+    <tr>                                                                =20=
+                                      =0A
+        <td style=3D"width: 10px; height: 100%;  ">                     =20=
+                                                                        =20=
+       =0A
+            <!-- empty cell -->                                         =20=
+                                                          =0A
+            <p>&nbsp;</p>                                               =20=
+                                                      =0A
+        </td>                                                           =20=
+                                          =0A
+        <td style=3D"color: white; font-family:'Trebuchet MS', Helvetica,=
+ sans-serif; ">                                                         =20=
+                                  =0A
+            <p style=3D"padding-left: 14px; color: #FFF;"><a style=3D"col=
+or: white;" href=3D"https://www.italotreno.it/it/privacy-policy">Privacy<=
+/a> | <a style=3D"color: white;" href=3D"https://www.italotreno.it/it/cop=
+yright-note-legali">Note Legali</a> | <a style=3D"color: white;" href=3D"=
+https://www.italotreno.it/it/termini-condizioni">Termini e condizioni di=20=
+trasporto</a></p>                                                       =20=
+                                              =0A
+        </td>                                                           =20=
+                                          =0A
+    </tr>                                                               =20=
+                                      =0A
+</table>                                                                =20=
+                                      =0A
+                                                                        =20=
+                              =0A
+<!-- copyright ntv logo -->                                             =20=
+                                                      =0A
+                                                                        =20=
+                              =0A
+<table style=3D"width: 800px; height: 65px; background-color: #A70000; co=
+lor: #FFFFFF; font-size:12px; border-collapse: collapse;">              =20=
+                                                                        =20=
+              =0A
+    <tr>                                                                =20=
+                                      =0A
+        <td style=3D"width: 10px; height: 100%;  ">                     =20=
+                                                                        =20=
+       =0A
+            <!-- empty cell -->                                         =20=
+                                                          =0A
+            <p>&nbsp;</p>                                               =20=
+                                                      =0A
+        </td>                                                           =20=
+                                          =0A
+        <td style=3D"font-family:'Trebuchet MS', Helvetica, sans-serif; "=
+>                                                                       =20=
+                    =0A
+            <p style=3D"padding-left: 14px; color: #FFFFFF; ">.ITALO &egr=
+ave; un marchio di Italo S.p.a. <br />&copy; - P.IVA: 09247981005</p>   =20=
+                                                                        =20=
+                        =0A
+        </td>                                                           =20=
+                                          =0A
+        <td style=3D"text-align: right; ">                              =20=
+                                                                        =20=
+
+            <img src=3D"https://www.italotreno.it/~/media/IDEA/Publishing=
+Images/MAIL/andata_ritorno/img/new/logo_italo.png" alt=3D"" style=3D" pad=
+ding-right: 12px; text-align: right;">                                  =20=
+                                                                  =0A
+        </td>                                                           =20=
+                                          =0A
+        <td style=3D"width: 12px; height: 100%;  ">                     =20=
+                                                                        =20=
+       =0A
+            <!-- empty cell -->                                         =20=
+                                                          =0A
+            <p>&nbsp;</p>                                               =20=
+                                                      =0A
+        </td>                                                           =20=
+                                          =0A
+    </tr>                                                               =20=
+                                      =0A
+</table>                                                                =20=
+                                      =0A
+<table style=3D"width: 800px; height: 65px; color: #FFFFFF; font-size:12p=
+x; border-collapse: collapse;">
+<td style=3D"font-family:'Trebuchet MS', Helvetica, sans-serif; ">      =20=
+                                                                        =20=
+            =0A
+            <p style=3D"padding-left: 25px; font-size: 12px; color: black=
+;">Attenzione: questo messaggio =C3=A8 generato automaticamente dai nostr=
+i sistemi. <br>                                                         =20=
+                                           =0A
+Invitiamo a non rispondere a questo messaggio, questa casella di posta el=
+ettronica non =C3=A8 abilitata alla ricezione.                          =20=
+                                                                        =20=
+
+</p>                                                                    =20=
+                                  =0A
+                                                                        =20=
+                                   =0A
+</td>=0A
+                                                                        =20=
+                                      =0A
+</table>                                                                =20=
+                                     =0A
+                                                                        =20=
+                            =0A
+</body>                                                                 =20=
+                                  =0A
+</html>
+                                                    =20

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="vendor/autoload.php" colors="true" stopOnFailure="false">
+    <php>
+        <ini name="memory_limit" value="512M"/>
+    </php>
+    <testsuites>
+        <testsuite name="Tests">
+            <directory suffix=".php">tests</directory>
+        </testsuite>
+    </testsuites>
+    <coverage>
+        <include>
+            <directory suffix=".php">src</directory>
+        </include>
+        <exclude>
+            <directory>docs</directory>
+            <directory>tests</directory>
+            <directory>vendor</directory>
+            <file>src/helpers/fetchAirports.php</file>
+        </exclude>
+    </coverage>
+</phpunit>

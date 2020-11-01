@@ -1,0 +1,32 @@
+{
+    "name": "account-travel/email-reservations",
+    "description": "Parse booking emails and create unified structure data",
+    "keywords": ["travel", "ticket", "flight", "account travel"],
+    "authors": [
+        {
+            "name": "Aleksandr Dokin",
+            "email": "alnidok@gmail.com",
+            "homepage": "https://alnidok.ru"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.4",
+        "ext-json": "*",
+        "jkphl/micrometa": "3.0.1",
+        "zbateson/mail-mime-parser": "^1.1",
+        "smalot/pdfparser": "^0.16.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "AccountTravel\\EmailReservations\\": "src/",
+            "AccountTravel\\EmailReservations\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
