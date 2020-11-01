@@ -20,7 +20,7 @@ class Italo extends AbstractEmailParser
         $emailYear = date('Y', strtotime($emailDate));
         $date = "{$emailYear}-{$date[3]}-{$date[2]}"; // Y-m-d
 
-        $html = str_replace(",\r\n}\r\n}", "\r\n}\r\n}", $this->html);
+        $html = preg_replace("#,(\s+)}(\s+)}#s", "$1}$2}", $this->html);
         $result = $this->getMicrodataByHtml($html, $this->getCustomHandlers($date));
         return $this->getResultByMicrodata($result);
     }

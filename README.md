@@ -1,5 +1,7 @@
 # Парсинг писем с бронями туристических услуг
 
+[![Build Status](https://travis-ci.com/AccountTravel/EmailReservations.svg?branch=master)](https://travis-ci.com/AccountTravel/EmailReservations)
+
 Парсинг email-сообщений с бронями (билетами) и создание на их основе соответствующей структуры schema.org:
 - https://schema.org/BusReservation
 - https://schema.org/FlightReservation

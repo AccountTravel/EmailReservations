@@ -1,7 +1,8 @@
+os: linux
+dist: xenial
 language: php
-php:
-  - 7.4
+php: 7.4.6
 before_install:
   - travis_retry composer self-update
   - composer install
-script: phpunit --bootstrap vendor/autoload.php tests
+script: php vendor/bin/phpunit --bootstrap vendor/autoload.php tests
