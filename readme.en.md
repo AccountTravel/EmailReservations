@@ -1,4 +1,4 @@
-#Parsing travel reservations from email
+# Parsing travel reservations from email
 
 Parsing email messages with travel tickets and creating schema.org reservation structure:
 - https://schema.org/BusReservation
@@ -8,7 +8,7 @@ Parsing email messages with travel tickets and creating schema.org reservation s
 
 ## Install
 ```shell script
-composer install
+composer require account-travel/email-reservations
 ```
 
 ## Usage
